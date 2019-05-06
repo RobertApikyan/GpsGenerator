@@ -37,7 +37,7 @@ public class PolynomialTest {
 
     public static final byte[] EXCEPTED_CA_OUT = new byte[]{1, 1, 0, 0, 1, 0, 0, 0, 0, 0};
 
-    public static final byte[] GOLD_NUMBERS = SatellitesCaFactory.SAT_15;
+    public static final byte[] GOLD_NUMBERS = SatellitesCaFactory.SAT_19;
     public static final String TEXT = "Robert Hello World And Good Night";
 
     PolynomialOne polynomialOne;

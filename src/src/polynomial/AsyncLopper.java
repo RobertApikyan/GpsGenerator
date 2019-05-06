@@ -41,7 +41,6 @@ public class AsyncLopper extends Thread {
         super.start();
     }
 
-    @FunctionalInterface
     public interface Consumer<T>{
         void accept(T t);
     }
