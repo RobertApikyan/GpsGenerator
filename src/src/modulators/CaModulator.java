@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * Created by Robert on 01.10.2017.
  */
-public class CaModulator implements Modulator<List<Byte>> {
+public class CaModulator implements Modulator<List<Integer>> {
     private CaGenerator caGenerator;
     private DataGenerator dataGenerator;
 
@@ -20,17 +20,15 @@ public class CaModulator implements Modulator<List<Byte>> {
     }
 
     @Override
-    public List<Byte> modulate() {
-        List<Byte> binaryList = dataGenerator.generate();
+    public List<Integer> modulate() {
+        List<Integer> binaryList = dataGenerator.generate();
 
-        List<Byte> modulatedData = new ArrayList<Byte>();
+        List<Integer> modulatedData = new ArrayList<Integer>();
 
-        for (Byte aBinaryList : binaryList) {
-            byte bit = aBinaryList;
-
+        for (Integer binary : binaryList) {
             for (int j = 0; j < DataGenerator.DATA_STEP; j++) {
-                byte ca = caGenerator.generate();
-                modulatedData.add(DataUtils.and(bit, ca));
+                int ca = caGenerator.generate();
+                modulatedData.add(DataUtils.and(binary, ca));
             }
         }
 

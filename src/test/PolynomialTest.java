@@ -37,7 +37,7 @@ public class PolynomialTest {
 
     public static final byte[] EXCEPTED_CA_OUT = new byte[]{1, 1, 0, 0, 1, 0, 0, 0, 0, 0};
 
-    public static final byte[] GOLD_NUMBERS = SatellitesCaFactory.SAT_19;
+    public static final int[] GOLD_NUMBERS = SatellitesCaFactory.SAT_19;
     public static final String TEXT = "Robert Hello World And Good Night";
 
     PolynomialOne polynomialOne;
@@ -80,9 +80,9 @@ public class PolynomialTest {
     @Test
     public void test_CaModulator() {
         System.out.println("text= " + TEXT);
-        List<Byte> modulatedData = caModulator.modulate();
+        List<Integer> modulatedData = caModulator.modulate();
 
-        byte[] goldNumber = goldNumberDetector.detect(modulatedData);
+        int[] goldNumber = goldNumberDetector.detect(modulatedData);
 
         System.out.println("goldNumber= " + Arrays.toString(goldNumber));
 
@@ -90,7 +90,7 @@ public class PolynomialTest {
 
         caDemodulator = new CaDemodulator(demodulatorCaGenerator);
 
-        List<Byte> demodulatedData = caDemodulator.demodulate(modulatedData);
+        List<Integer> demodulatedData = caDemodulator.demodulate(modulatedData);
 
         System.out.println("result= " + DataUtils.binaryToString(demodulatedData));
     }

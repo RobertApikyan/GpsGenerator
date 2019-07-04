@@ -6,7 +6,7 @@ import src.polynomial.PolynomialTwo;
 /**
  * Created by Robert on 30.09.2017.
  */
-public class CaGenerator implements Generator<Byte> {
+public class CaGenerator implements Generator<Integer> {
     private PolynomialOne polynomialOne;
     private PolynomialTwo polynomialTwo;
 
@@ -20,7 +20,7 @@ public class CaGenerator implements Generator<Byte> {
     }
 
     @Override
-    public Byte generate() {
+    public Integer generate() {
         return DataUtils.exOr(polynomialOne.process(), polynomialTwo.process());
     }
 

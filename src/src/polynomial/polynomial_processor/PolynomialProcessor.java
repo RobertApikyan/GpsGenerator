@@ -1,63 +1,67 @@
 package src.polynomial.polynomial_processor;
 
+import src.generators.DataUtils;
+import src.polynomial.PolynomialState;
+
 /**
  * Created by Robert on 30.09.2017.
  */
 public abstract class PolynomialProcessor {
-    public static final int COMPLETE_CA = 1023;
-    private byte[] exOrIndexes;
-    private byte[] bytes = createBytes();
+    private int[] exOrIndexes;
+    private int[] register;
     private int processCount = 0;
+    private int registerSize;
 
-    public PolynomialProcessor(byte... exOrIndexes) {
+    public PolynomialProcessor(int[] exOrIndexes, int registerSize) {
         this.exOrIndexes = exOrIndexes;
+        this.registerSize = registerSize;
+        register = createBytes();
     }
 
     protected byte exOr() {
         return exOr(exOrIndexes);
     }
 
-    public byte exOr(byte[] exOrIndexes) {
-        byte sum = 0;
-
-        for (byte exOrIndex : exOrIndexes) {
-            sum += bytes[exOrIndex - 1];
-        }
-
-        return (byte) (sum % 2 == 0 ? 0 : 1);
+    protected byte exOr(int[] exOrIndexes) {
+       return DataUtils.exOr(register,exOrIndexes);
     }
 
     /**
      * @param startValue, the value from exOr
      * @return output value
      */
-    protected byte shift(byte startValue) {
-        int lastItemIndex = bytes.length - 1;
-        byte outPut = bytes[lastItemIndex];
-        System.arraycopy(bytes, 0, bytes, 1, lastItemIndex);
-        bytes[0] = startValue;
+    protected int shift(int startValue) {
+        int lastItemIndex = register.length - 1;
+        int outPut = register[lastItemIndex];
+        System.arraycopy(register, 0, register, 1, lastItemIndex);
+        register[0] = startValue;
         return outPut;
     }
 
     public void resetRegister() {
         processCount = 0;
-        bytes = createBytes();
+        register = createBytes();
     }
 
-    private byte[] createBytes() {
-        return new byte[]{1, 1, 1, 1, 1, 1, 1, 1, 1, 1};
-    }
-
-    public byte[] getCurrentBytes() {
-        return bytes;
-    }
-
-    public byte process() {
-        if (processCount == COMPLETE_CA) {
-            resetRegister();
+    protected int[] createBytes() {
+        int[] registers = new int[registerSize];
+        for (int i = 0; i < registers.length; i++) {
+            registers[i] = 1;
         }
+        return registers;
+    }
+
+    public int[] getCurrentBytes() {
+        return register;
+    }
+
+    public int process() {
         processCount++;
         return processNext();
+    }
+
+    public PolynomialState captureState() {
+        return new PolynomialState(register);
     }
 
     /**
@@ -70,5 +74,20 @@ public abstract class PolynomialProcessor {
      *
      * @return outPut value
      */
-    public abstract byte processNext();
+    protected abstract int processNext();
+
+
+    @Override
+    public String toString() {
+        StringBuilder builder = new StringBuilder();
+        builder.append("step= ").append(processCount).append(" | ");
+        for (int b : register) {
+            builder.append(b).append(" ");
+        }
+        return builder.toString();
+    }
+
+    public int getRegisterSize() {
+        return registerSize;
+    }
 }

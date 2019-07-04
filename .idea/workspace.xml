@@ -2,33 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48641ffd-cbba-45fc-982b-4c8c9c74f259" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/src/main/ParallelSatelliteCaGeneration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/src/polynomial/GenericPolynomial.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/src/polynomial/PolynomialState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/src/polynomial/collectors/PolynomialCollector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/src/polynomial/collectors/SatelliteCollector.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CAcodeGenerator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CAcodeGenerator.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CAcodeGenerator/src/demodulators/CaDemodulator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CAcodeGenerator/src/demodulators/CaDemodulator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CAcodeGenerator/src/demodulators/Demodulator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CAcodeGenerator/src/demodulators/Demodulator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CAcodeGenerator/src/detectors/Detector.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CAcodeGenerator/src/detectors/Detector.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CAcodeGenerator/src/detectors/GoldNumberDetector.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CAcodeGenerator/src/detectors/GoldNumberDetector.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CAcodeGenerator/src/generators/CaGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CAcodeGenerator/src/generators/CaGenerator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CAcodeGenerator/src/generators/DataGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CAcodeGenerator/src/generators/DataGenerator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CAcodeGenerator/src/generators/DataUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CAcodeGenerator/src/generators/DataUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CAcodeGenerator/src/generators/Generator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CAcodeGenerator/src/generators/Generator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CAcodeGenerator/src/main/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CAcodeGenerator/src/main/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CAcodeGenerator/src/main/Application.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CAcodeGenerator/src/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CAcodeGenerator/src/main/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CAcodeGenerator/src/modulators/CaModulator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CAcodeGenerator/src/modulators/CaModulator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CAcodeGenerator/src/modulators/Modulator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CAcodeGenerator/src/modulators/Modulator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CAcodeGenerator/src/polynomial/AsyncLopper$Consumer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CAcodeGenerator/src/polynomial/AsyncLopper$Consumer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CAcodeGenerator/src/polynomial/AsyncLopper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CAcodeGenerator/src/polynomial/AsyncLopper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CAcodeGenerator/src/polynomial/PolynomialOne.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CAcodeGenerator/src/polynomial/PolynomialOne.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CAcodeGenerator/src/polynomial/PolynomialTwo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CAcodeGenerator/src/polynomial/PolynomialTwo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CAcodeGenerator/src/polynomial/polynomial_processor/PolynomialProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CAcodeGenerator/src/polynomial/polynomial_processor/PolynomialProcessor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CAcodeGenerator/src/satellites/SatellitesCaFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CAcodeGenerator/src/satellites/SatellitesCaFactory.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CAcodeGenerator/test/PolynomialTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CAcodeGenerator/test/PolynomialTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CAcodeGenerator/test/PrintTestNameRule$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CAcodeGenerator/test/PrintTestNameRule$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CAcodeGenerator/test/PrintTestNameRule.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CAcodeGenerator/test/PrintTestNameRule.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/demodulators/CaDemodulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/demodulators/CaDemodulator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/detectors/GoldNumberDetector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/detectors/GoldNumberDetector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/generators/CaGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/generators/CaGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/generators/DataGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/generators/DataGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/generators/DataUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/generators/DataUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/main/Application.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/polynomial/AsyncLopper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/polynomial/AsyncLopper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/modulators/CaModulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/modulators/CaModulator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/polynomial/PolynomialOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/polynomial/PolynomialOne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/polynomial/PolynomialTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/polynomial/PolynomialTwo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/polynomial/polynomial_processor/PolynomialProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/polynomial/polynomial_processor/PolynomialProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/satellites/SatellitesCaFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/satellites/SatellitesCaFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/PolynomialTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/PolynomialTest.java" afterDir="false" />
     </list>
     <ignored path="CAcodeGenerator.iws" />
@@ -54,30 +59,19 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
   <component name="FavoritesManager">
     <favorites_list name="CAcodeGenerator" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CAcodeGenerator.iml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/src/main/Application.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/src/main/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+            <state relative-caret-position="188">
+              <caret line="109" column="118" lean-forward="true" selection-start-line="109" selection-start-column="62" selection-end-line="109" selection-end-column="118" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -86,33 +80,152 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/PolynomialTest.java">
+        <entry file="file://$PROJECT_DIR$/src/src/main/ParallelSatelliteCaGeneration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="39" column="72" selection-start-line="39" selection-start-column="46" selection-end-line="39" selection-end-column="72" />
+            <state relative-caret-position="241">
+              <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/src/polynomial/AsyncLopper.java">
+        <entry file="file://$PROJECT_DIR$/src/src/satellites/SatellitesCaFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="43" selection-start-line="43" selection-end-line="43" />
+            <state relative-caret-position="-412">
+              <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+              <folding>
+                <element signature="e#2379#2380#0" expanded="true" />
+                <element signature="e#2432#2433#0" expanded="true" />
+                <element signature="e#2493#2494#0" expanded="true" />
+                <element signature="e#2539#2540#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/PrintTestNameRule.java">
+        <entry file="file://$PROJECT_DIR$/src/src/detectors/GoldNumberDetector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+            <state relative-caret-position="193">
+              <caret line="27" column="68" selection-start-line="27" selection-start-column="68" selection-end-line="27" selection-end-column="68" />
+              <folding>
+                <element signature="e#804#813#0" expanded="true" />
+                <element signature="e#864#873#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/src/generators/DataUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="22" column="45" lean-forward="true" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
+              <folding>
+                <element signature="e#1332#1333#0" expanded="true" />
+                <element signature="e#1391#1392#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/io/FileOutputStream.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1089">
+              <caret line="99" column="11" selection-start-line="99" selection-start-column="11" selection-end-line="99" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/src/polynomial/collectors/SatelliteCollector.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="290">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#313#322#0" expanded="true" />
+                <element signature="e#369#370#0" expanded="true" />
+                <element signature="e#407#408#0" expanded="true" />
+                <element signature="e#696#697#0" expanded="true" />
+                <element signature="e#725#726#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/src/polynomial/collectors/PolynomialCollector.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/src/polynomial/GenericPolynomial.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+              <folding>
+                <element signature="e#315#316#0" expanded="true" />
+                <element signature="e#351#352#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>0 1 0 0 0 0 0 0 0 0</find>
+      <find>0 1 1 0 0 0 0 0 0 0</find>
+      <find>0 1 0 1 0 0 0 0 0 0</find>
+      <find>1 0 1 1 1 1 1 1 1 1</find>
+      <find>1 0 0 1 1 1 1 1 1 1</find>
+      <find>0 1 0 1 1 1 1 1 1 1</find>
+      <find>1 1 0 0 0 1 1 1 1 1</find>
+      <find>1 1 0 0 1 1 1 1 1 1</find>
+      <find>0 1 1 0 0 1 1 1 1 1</find>
+      <find>1 0 1 0 1 1 1 1 1 1</find>
+      <find>0 1 0 1 0 1 1 1 1 1</find>
+      <find>1 1 1 1 0 0 1 1 1 1</find>
+      <find>0 1 1 0 1 0 1 1 1 1</find>
+      <find>1 1 1 0 0 1 0 1 1 1</find>
+      <find>0 1 1 1 1 1 1 1 1 1</find>
+      <find>1 0 1 1 0 1 1 0 1 1</find>
+      <find>1 1 1 0 1 0 0 1 1 1</find>
+      <find>0 0 1 0 0 0 1 1 1 1</find>
+      <find>1 0 0 0 0 1 1 1 1 1</find>
+      <find>0 0 0 0 1 1 1 1 1 1</find>
+      <find>0 0 0 1 1 1 1 1 1 1</find>
+      <find>0 0 1 1 1 1 1 1 1 1</find>
+      <find>1 1 1 1 1</find>
+      <find>1 1 1 1 1 1 1</find>
+      <find>1 1 1 1 1 1 1 1 1</find>
+      <find>1 1 1 1 1 1 1 1 1 1</find>
+      <find>1 1 1 1 1 1 1 1 1 1</find>
+      <find>1 0 0 0 1 1 1 1 1 1</find>
+      <find>258</find>
+      <find>byte</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>int</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -120,24 +233,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/src/Polinomial.java" />
-        <option value="$PROJECT_DIR$/src/src/Polynomial.java" />
-        <option value="$PROJECT_DIR$/src/src/PolinomialTwo.java" />
-        <option value="$PROJECT_DIR$/src/src/PolynomialProcessor.java" />
-        <option value="$PROJECT_DIR$/src/src/polinomial_processor/OutPutRulle.java" />
-        <option value="$PROJECT_DIR$/src/src/polinomial_processor/OutPutRule.java" />
-        <option value="$PROJECT_DIR$/src/src/polinomial_processor/Processor.java" />
-        <option value="$PROJECT_DIR$/src/src/polinomial_processor/SatelliteExOr.java" />
-        <option value="$PROJECT_DIR$/src/src/polinomial_processor/ExOr.java" />
-        <option value="$PROJECT_DIR$/src/src/PrintTestNameRule.java" />
-        <option value="$PROJECT_DIR$/src/src/PolynomialOne.java" />
-        <option value="$PROJECT_DIR$/src/src/PolynomialTwo.java" />
-        <option value="$PROJECT_DIR$/src/src/PolynomialUtils.java" />
-        <option value="$PROJECT_DIR$/src/src/polinomial_processor/PolynomialProcessor.java" />
-        <option value="$PROJECT_DIR$/src/src/AsyncLooper.java" />
-        <option value="$PROJECT_DIR$/src/src/polinomial_processor/AsyncLopper.java" />
-        <option value="$PROJECT_DIR$/src/src/AsyncLopper.java" />
-        <option value="$PROJECT_DIR$/src/src/Applicatin.java" />
         <option value="$PROJECT_DIR$/src/src/generators/TimerGenerator.java" />
         <option value="$PROJECT_DIR$/src/src/generators/Generator.java" />
         <option value="$PROJECT_DIR$/src/src/generators/FileGenerator.java" />
@@ -148,33 +243,58 @@
         <option value="$PROJECT_DIR$/src/src/Application.java" />
         <option value="$PROJECT_DIR$/src/src/modulator/CaModulator.java" />
         <option value="$PROJECT_DIR$/src/src/demodulators/Demodulator.java" />
+        <option value="$PROJECT_DIR$/src/src/detectors/Detector.java" />
+        <option value="$PROJECT_DIR$/src/src/detectors/CaDetector.java" />
+        <option value="$PROJECT_DIR$/src/test/PrintTestNameRule.java" />
+        <option value="$PROJECT_DIR$/src/src/main/StringUtils.java" />
+        <option value="$PROJECT_DIR$/src/src/polynomial/AsyncLopper.java" />
+        <option value="$PROJECT_DIR$/src/src/main/PolynomialState.java" />
+        <option value="$PROJECT_DIR$/src/src/polynomial/PolinomialNeptum.kt" />
+        <option value="$PROJECT_DIR$/src/src/polynomial/PolinomialNeptun.kt" />
+        <option value="$PROJECT_DIR$/src/src/polynomial/PolynomialNeptun.kt" />
+        <option value="$PROJECT_DIR$/src/src/polynomial/PolynomialNeptun.java" />
+        <option value="$PROJECT_DIR$/src/src/polynomial/PolynomialNeptune.java" />
+        <option value="$PROJECT_DIR$/src/src/polynomial/PolynomialProcessorWatcher.java" />
+        <option value="$PROJECT_DIR$/src/src/polynomial/polynomial_processor/PolynomialProcessorWatcher.java" />
+        <option value="$PROJECT_DIR$/src/src/polynomial/ShiftWatcher.java" />
+        <option value="$PROJECT_DIR$/src/src/polynomial/polynomial_processor/PolynomialProcessorNotifier.java" />
+        <option value="$PROJECT_DIR$/src/src/polynomial/collectors/CollectorNotifier.java" />
+        <option value="$PROJECT_DIR$/src/src/polynomial/collectors/ShiftCollector.java" />
+        <option value="$PROJECT_DIR$/src/src/polynomial/collectors/PolynomialCollectorNotifier.java" />
+        <option value="$PROJECT_DIR$/src/src/polynomial/collectors/notifier/PolynomialCollectorNotifier.java" />
+        <option value="$PROJECT_DIR$/src/src/polynomial/collectors/NodeCollector.java" />
+        <option value="$PROJECT_DIR$/src/src/polynomial/collectors/notifier/SimplePolynomialCollectorNotifier.java" />
+        <option value="$PROJECT_DIR$/src/src/polynomial/collectors/PolynomialNodeCollector.java" />
+        <option value="$PROJECT_DIR$/src/src/polynomial/collectors/notifier/SimplePolynomialStateChangeNotifier.java" />
+        <option value="$PROJECT_DIR$/src/src/polynomial/collectors/PolynomialShiftCollector.java" />
         <option value="$PROJECT_DIR$/src/src/generators/DataGenerator.java" />
         <option value="$PROJECT_DIR$/src/src/demodulators/CaDemodulator.java" />
-        <option value="$PROJECT_DIR$/src/src/detectors/Detector.java" />
-        <option value="$PROJECT_DIR$/src/src/satellites/SatellitesCaFactory.java" />
-        <option value="$PROJECT_DIR$/src/src/polynomial/polynomial_processor/PolynomialProcessor.java" />
-        <option value="$PROJECT_DIR$/src/src/polynomial/PolynomialTwo.java" />
-        <option value="$PROJECT_DIR$/src/src/detectors/CaDetector.java" />
         <option value="$PROJECT_DIR$/src/src/generators/CaGenerator.java" />
-        <option value="$PROJECT_DIR$/src/test/PrintTestNameRule.java" />
+        <option value="$PROJECT_DIR$/src/src/polynomial/PolynomialState.java" />
+        <option value="$PROJECT_DIR$/src/src/polynomial/polynomial_processor/PolynomialProcessor.java" />
         <option value="$PROJECT_DIR$/src/src/modulators/CaModulator.java" />
-        <option value="$PROJECT_DIR$/src/src/main/StringUtils.java" />
         <option value="$PROJECT_DIR$/src/src/detectors/GoldNumberDetector.java" />
-        <option value="$PROJECT_DIR$/src/src/generators/DataUtils.java" />
-        <option value="$PROJECT_DIR$/src/src/polynomial/AsyncLopper.java" />
-        <option value="$PROJECT_DIR$/src/test/PolynomialTest.java" />
         <option value="$PROJECT_DIR$/src/src/main/Main.java" />
+        <option value="$PROJECT_DIR$/src/src/polynomial/PolynomialOne.java" />
+        <option value="$PROJECT_DIR$/src/src/polynomial/PolynomialTwo.java" />
+        <option value="$PROJECT_DIR$/src/test/PolynomialTest.java" />
+        <option value="$PROJECT_DIR$/src/src/polynomial/GenericPolynomial.java" />
+        <option value="$PROJECT_DIR$/src/src/polynomial/collectors/PolynomialCollector.java" />
+        <option value="$PROJECT_DIR$/src/src/polynomial/collectors/SatelliteCollector.java" />
+        <option value="$PROJECT_DIR$/src/src/satellites/SatellitesCaFactory.java" />
+        <option value="$PROJECT_DIR$/src/src/main/ParallelSatelliteCaGeneration.java" />
+        <option value="$PROJECT_DIR$/src/src/generators/DataUtils.java" />
       </list>
     </option>
   </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="123" />
-    <option name="y" value="256" />
-    <option name="width" value="1639" />
-    <option name="height" value="1044" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1" />
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="801" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -182,36 +302,71 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="CAcodeGenerator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CaGenerator" type="462c0819:PsiDirectoryNode" />
+              <item name="GpsGenerator" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CAcodeGenerator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CaGenerator" type="462c0819:PsiDirectoryNode" />
+              <item name="GpsGenerator" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CAcodeGenerator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CaGenerator" type="462c0819:PsiDirectoryNode" />
+              <item name="GpsGenerator" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CAcodeGenerator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CaGenerator" type="462c0819:PsiDirectoryNode" />
+              <item name="GpsGenerator" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CAcodeGenerator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CaGenerator" type="462c0819:PsiDirectoryNode" />
+              <item name="GpsGenerator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="modulators" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CAcodeGenerator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GpsGenerator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="polynomial" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CAcodeGenerator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GpsGenerator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="polynomial" type="462c0819:PsiDirectoryNode" />
+              <item name="collectors" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CAcodeGenerator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GpsGenerator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="polynomial" type="462c0819:PsiDirectoryNode" />
+              <item name="polynomial_processor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CAcodeGenerator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GpsGenerator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="satellites" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CAcodeGenerator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GpsGenerator" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -219,6 +374,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -231,17 +388,16 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="OverrideImplement.combined" value="true" />
-    <property name="OverrideImplement.overriding.sorted" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SearchEverywhereHistoryKey" value="Data&#9;FILE&#9;file://D:/CAcodeGenerator/src/src/generators/DataGenerator.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557170664580" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
@@ -259,48 +415,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
-      <module name="" />
-      <option name="ACTIVITY_CLASS" value="" />
-      <option name="MODE" value="default_activity" />
-      <option name="DEPLOY" value="true" />
-      <option name="ARTIFACT_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
-      <method />
-    </configuration>
-    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
-      <module name="" />
-      <option name="TESTING_TYPE" value="0" />
-      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.ParallelSatelliteCaGeneration">
     <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="myFilePath" />
@@ -390,6 +505,61 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType">
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <Java />
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType">
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <Java />
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -402,7 +572,7 @@
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="src.main.*" />
+          <option name="PATTERN" value="src.polynomial.collectors.notifier.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -414,6 +584,20 @@
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParallelSatelliteCaGeneration" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.main.ParallelSatelliteCaGeneration" />
+      <module name="CAcodeGenerator" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="src.main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -478,9 +662,11 @@
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="JUnit.PolynomialTest" />
+      <item itemvalue="Application.ParallelSatelliteCaGeneration" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ParallelSatelliteCaGeneration" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -518,10 +704,10 @@
     <option name="totallyTimeSpent" value="57803000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="1" y="23" width="1440" height="801" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49916527" visible="true" weight="0.19669509" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49916527" visible="true" weight="0.21959943" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="3" sideWeight="0.5008347" side_tool="true" weight="0.25" />
@@ -529,17 +715,17 @@
       <window_info id="Image Layers" order="5" />
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3347779" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.40303358" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.07052186" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2045134" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.34696755" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.35794184" />
       <window_info anchor="bottom" id="Application Servers" order="8" />
-      <window_info anchor="bottom" id="Messages" order="9" weight="0.32936078" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.32722145" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32997763" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.30747533" />
       <window_info anchor="bottom" id="IDEtalk Messages" order="12" />
       <window_info anchor="bottom" id="Changes" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -572,6 +758,12 @@
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/src/polynomial/collectors/SatelliteCollector.java</url>
+          <line>21</line>
+          <properties />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
@@ -585,9 +777,8 @@
         <watch expression="caGenerator.generate()" language="JAVA" />
       </configuration>
       <configuration name="Application">
-        <watch expression="EXPECTED_BYTE_RESULT_FOR_POLYNOMIAL_TWO" language="JAVA" custom="" />
-        <watch expression="(char) 72" language="JAVA" custom="" />
-        <watch expression="Integer.toBinaryString(data[1] &amp; 0xFF)" language="JAVA" custom="" />
+        <watch expression="DataUtils.binaryToString()" language="JAVA" />
+        <watch expression="codes" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
@@ -607,12 +798,52 @@
   <component name="debuggerHistoryManager">
     <expressions id="watch">
       <expression>
-        <expression-string>caGenerator.generate()</expression-string>
+        <expression-string>codes</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>dataGenerator.generate()</expression-string>
+        <expression-string>DataUtils.binaryToString()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>s1.binary(&quot;&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>s1.binary()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>registers</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>states</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>polynomialOne.captureState()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>new File(&quot;Users/robert/Desktop/polinomialOne.txt&quot;).isDirectory()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>new File(&quot;Users/robert/Desktop/polinomialOne.txt&quot;).exists()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>new File(&quot;Users/robert/Desktop/polinomialOne.txt&quot;)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -623,57 +854,317 @@
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/lang/Thread.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/io/PrintStream.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11.jar!/org/junit/internal/runners/model/ReflectiveCallable.class" />
-    <entry file="file://$PROJECT_DIR$/src/src/detectors/Detector.java" />
-    <entry file="file://$PROJECT_DIR$/src/src/generators/Generator.java" />
-    <entry file="file://$PROJECT_DIR$/src/src/satellites/SatellitesCaFactory.java" />
-    <entry file="file://$PROJECT_DIR$/src/src/generators/DataGenerator.java" />
-    <entry file="file://$PROJECT_DIR$/src/src/modulators/Modulator.java" />
-    <entry file="file://$PROJECT_DIR$/src/src/polynomial/polynomial_processor/PolynomialProcessor.java" />
-    <entry file="file://$PROJECT_DIR$/src/src/demodulators/Demodulator.java" />
-    <entry file="file://$PROJECT_DIR$/src/src/demodulators/CaDemodulator.java" />
-    <entry file="file://$PROJECT_DIR$/src/src/generators/CaGenerator.java" />
-    <entry file="file://$PROJECT_DIR$/src/src/generators/DataUtils.java" />
-    <entry file="file://$PROJECT_DIR$/src/src/modulators/CaModulator.java" />
-    <entry file="file://$PROJECT_DIR$/src/src/detectors/GoldNumberDetector.java" />
-    <entry file="file://$PROJECT_DIR$/src/src/polynomial/PolynomialTwo.java" />
-    <entry file="file://$PROJECT_DIR$/src/src/polynomial/PolynomialOne.java" />
     <entry file="file://$PROJECT_DIR$/CAcodeGenerator.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/src/main/Application.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/util/Scanner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/PolynomialTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="39" column="72" selection-start-line="39" selection-start-column="46" selection-end-line="39" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/src/polynomial/AsyncLopper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        <state relative-caret-position="19530">
+          <caret line="1356" column="18" selection-start-line="1356" selection-start-column="18" selection-end-line="1356" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/PrintTestNameRule.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
+        <state relative-caret-position="225">
           <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/polynomial/PolynomialNeptun.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/polynomial/PolynomialNeptune.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#224#225#0" expanded="true" />
+            <element signature="e#273#274#0" expanded="true" />
+            <element signature="e#195#196#0" expanded="true" />
+            <element signature="e#219#220#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/util/Set.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4">
+          <caret line="70" column="2" lean-forward="true" selection-start-line="70" selection-start-column="2" selection-end-line="70" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/main/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/polynomial/collectors/PolynomialNodeCollector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+          <folding>
+            <element signature="e#825#826#0" expanded="true" />
+            <element signature="e#857#858#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/polynomial/collectors/notifier/PolynomialStateChangeListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/polynomial/collectors/notifier/SimplePolynomialStateChangeNotifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="79" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/detectors/Detector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="8" lean-forward="true" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/demodulators/Demodulator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/demodulators/CaDemodulator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="37" column="42" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="42" />
+          <folding>
+            <element signature="e#625#634#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/generators/CaGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+          <folding>
+            <element signature="e#595#596#0" expanded="true" />
+            <element signature="e#682#683#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/generators/DataGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/generators/Generator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/modulators/CaModulator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
+          <folding>
+            <element signature="e#704#713#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/modulators/Modulator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/PolynomialTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1410">
+          <caret line="94" column="59" selection-start-line="94" selection-start-column="59" selection-end-line="94" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/polynomial/AsyncLopper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/polynomial/PolynomialOne.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/polynomial/PolynomialState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="62" column="16" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#182#183#0" expanded="true" />
+            <element signature="e#227#228#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/polynomial/PolynomialTwo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/io/BufferedWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="519">
+          <caret line="86" column="11" selection-start-line="86" selection-start-column="11" selection-end-line="86" selection-end-column="11" />
+          <folding>
+            <element signature="e#2279#2280#0" expanded="true" />
+            <element signature="e#2327#2328#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/polynomial/polynomial_processor/PolynomialProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/polynomial/collectors/PolynomialCollector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/io/FileOutputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1089">
+          <caret line="99" column="11" selection-start-line="99" selection-start-column="11" selection-end-line="99" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/polynomial/collectors/SatelliteCollector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#313#322#0" expanded="true" />
+            <element signature="e#369#370#0" expanded="true" />
+            <element signature="e#407#408#0" expanded="true" />
+            <element signature="e#696#697#0" expanded="true" />
+            <element signature="e#725#726#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/detectors/GoldNumberDetector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="27" column="68" selection-start-line="27" selection-start-column="68" selection-end-line="27" selection-end-column="68" />
+          <folding>
+            <element signature="e#804#813#0" expanded="true" />
+            <element signature="e#864#873#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/satellites/SatellitesCaFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-412">
+          <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+          <folding>
+            <element signature="e#2379#2380#0" expanded="true" />
+            <element signature="e#2432#2433#0" expanded="true" />
+            <element signature="e#2493#2494#0" expanded="true" />
+            <element signature="e#2539#2540#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/polynomial/GenericPolynomial.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="e#315#316#0" expanded="true" />
+            <element signature="e#351#352#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/src/main/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        <state relative-caret-position="188">
+          <caret line="109" column="118" lean-forward="true" selection-start-line="109" selection-start-column="62" selection-end-line="109" selection-end-column="118" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/io/BufferedOutputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="37" column="6" selection-start-line="37" selection-start-column="6" selection-end-line="37" selection-end-column="6" />
+          <folding>
+            <element signature="e#1188#1189#0" expanded="true" />
+            <element signature="e#1219#1220#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/main/ParallelSatelliteCaGeneration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/generators/DataUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="22" column="45" lean-forward="true" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
+          <folding>
+            <element signature="e#1332#1333#0" expanded="true" />
+            <element signature="e#1391#1392#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -718,7 +1209,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>11</last-edited>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -735,7 +1226,17 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
               </list>
             </option>
           </splitter-proportions>

@@ -7,14 +7,14 @@ import src.polynomial.polynomial_processor.PolynomialProcessor;
  */
 public class PolynomialOne extends PolynomialProcessor {
     // 1+x3+x10 algorithm
-    private static final byte[] EX_OR_INDEXES = new byte[]{3,10};
+    private static final int[] EX_OR_INDEXES = new int[]{3,10};
 
     public PolynomialOne() {
-        super(EX_OR_INDEXES);
+        super(EX_OR_INDEXES,10);
     }
 
     @Override
-    public byte processNext() {
+    public int processNext() {
         return shift(exOr());
     }
 }

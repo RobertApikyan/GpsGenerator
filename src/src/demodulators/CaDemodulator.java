@@ -10,22 +10,22 @@ import java.util.List;
 /**
  * Created by Robert on 01.10.2017.
  */
-public class CaDemodulator implements Demodulator<List<Byte>, List<Byte>> {
+public class CaDemodulator implements Demodulator<List<Integer>, List<Integer>> {
     private CaGenerator caGenerator;
-    private List<Byte> ca;// Ca code
+    private List<Integer> ca;// Ca code
 
     public CaDemodulator(CaGenerator caGenerator) {
         this.caGenerator = caGenerator;
     }
 
     @Override
-    public List<Byte> demodulate(List<Byte> data) {
+    public List<Integer> demodulate(List<Integer> data) {
         initCaCodes();
-        List<Byte> outData = new ArrayList<Byte>();
+        List<Integer> outData = new ArrayList<Integer>();
 
         for (int i = 0; i < data.size(); i += DataGenerator.DATA_STEP) {
             boolean isReverse = DataUtils.isReverse(data.get(i), ca);
-            byte dataBit = (byte) (isReverse ? 0 : 1);
+            int dataBit =  (isReverse ? 0 : 1);
             outData.add(dataBit);
         }
 
@@ -33,9 +33,9 @@ public class CaDemodulator implements Demodulator<List<Byte>, List<Byte>> {
     }
 
     private void initCaCodes() {
-        ca = new ArrayList<Byte>();
+        ca = new ArrayList<Integer>();
         for (int i = 0; i < DataGenerator.DATA_STEP; i++) {
-            byte caBit = caGenerator.generate();
+            int caBit = caGenerator.generate();
             ca.add(caBit);
         }
     }

@@ -5,7 +5,7 @@ import java.util.List;
 /**
  * Created by Robert on 30.09.2017.
  */
-public class DataGenerator implements Generator<List<Byte>> {
+public class DataGenerator implements Generator<List<Integer>> {
     public static final int DATA_STEP = 20460;
 
     private String text;
@@ -15,7 +15,7 @@ public class DataGenerator implements Generator<List<Byte>> {
     }
 
     @Override
-    public List<Byte> generate() {
+    public List<Integer> generate() {
         return DataUtils.stringToBinary(text);
     }
 }

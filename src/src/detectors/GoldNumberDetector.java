@@ -10,10 +10,12 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import static src.main.Main.COMPLETE_CA;
+
 /**
  * Created by Robert on 02.10.2017.
  */
-public class GoldNumberDetector implements Detector<byte[], List<Byte>> {
+public class GoldNumberDetector implements Detector<int[], List<Integer>> {
     private CaGenerator caGenerator;
 
     public GoldNumberDetector(CaGenerator caGenerator) {
@@ -21,20 +23,20 @@ public class GoldNumberDetector implements Detector<byte[], List<Byte>> {
     }
 
     @Override
-    public byte[] detect(List<Byte> bytes) {
+    public int[] detect(List<Integer> bytes) {
 
-        List<byte[]> goldNumbers = SatellitesCaFactory.getGoldNumbersByteArrayList();
-        List<Byte> ca = new ArrayList<Byte>();
-        List<Byte> caReverse = new ArrayList<Byte>();
+        List<int[]> goldNumbers = SatellitesCaFactory.getGoldNumbersintArrayList();
+        List<Integer> ca = new ArrayList<Integer>();
+        List<Integer> caReverse = new ArrayList<Integer>();
         List<Integer> matches = new ArrayList<Integer>();
 
-        for (byte[] goldNumber : goldNumbers) {
+        for (int[] goldNumber : goldNumbers) {
             PolynomialTwo polynomialTwo = SatellitesCaFactory.createFor(goldNumber);
 
             caGenerator.setPolynomialTwo(polynomialTwo);
 
-            for (int i = 0; i < PolynomialProcessor.COMPLETE_CA; i++) {
-                Byte caCode = caGenerator.generate();
+            for (int i = 0; i < COMPLETE_CA; i++) {
+                int caCode = caGenerator.generate();
                 ca.add(caCode);
                 caReverse.add(DataUtils.reverseBite(caCode));
             }
