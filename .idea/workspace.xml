@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="48641ffd-cbba-45fc-982b-4c8c9c74f259" name="Default" comment="1. parallel ca code generation">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CAcodeGenerator/src/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CAcodeGenerator/src/main/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CAcodeGenerator/src/satellites/SatellitesCaFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CAcodeGenerator/src/satellites/SatellitesCaFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/main/ParallelSatelliteCaGeneration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/main/ParallelSatelliteCaGeneration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/polynomial/collectors/PolynomialCollector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/polynomial/phaseSelector/PhaseSelector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/polynomial/collectors/SatelliteCollector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/polynomial/phaseSelector/SatellitePhaseSelector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/satellites/SatellitesCaFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/satellites/SatellitesCaFactory.java" afterDir="false" />
-    </list>
+    <list default="true" id="48641ffd-cbba-45fc-982b-4c8c9c74f259" name="Default" comment="1. parallel ca code generation" />
     <ignored path="CAcodeGenerator.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -83,8 +74,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/src/main/ParallelSatelliteCaGeneration.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="196">
-                  <caret line="22" column="101" selection-start-line="22" selection-start-column="101" selection-end-line="22" selection-end-column="101" />
+                <state relative-caret-position="-188">
+                  <caret line="38" column="44" lean-forward="true" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -624,7 +615,14 @@
       <option name="project" value="LOCAL" />
       <updated>1562222405233</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="1. parallel ca code generation">
+      <created>1562321293787</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1562321293787</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1092,8 +1090,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/src/main/ParallelSatelliteCaGeneration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="22" column="101" selection-start-line="22" selection-start-column="101" selection-end-line="22" selection-end-column="101" />
+        <state relative-caret-position="-188">
+          <caret line="38" column="44" lean-forward="true" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
