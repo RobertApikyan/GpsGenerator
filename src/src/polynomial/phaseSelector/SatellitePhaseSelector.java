@@ -1,4 +1,4 @@
-package src.polynomial.collectors;
+package src.polynomial.phaseSelector;
 
 import src.generators.DataUtils;
 import src.polynomial.PolynomialState;
@@ -6,14 +6,14 @@ import src.polynomial.PolynomialState;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SatelliteCollector implements PolynomialCollector {
+public class SatellitePhaseSelector implements PhaseSelector {
     private final int[] indexes;
     private final List<Integer> values = new ArrayList<Integer>();
 
     /**
      * @param indexes, example from 1 to 10
      */
-    public SatelliteCollector(int[] indexes) {
+    public SatellitePhaseSelector(int[] indexes) {
         this.indexes = indexes;
     }
 

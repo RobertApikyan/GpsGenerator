@@ -1,7 +1,7 @@
-package src.polynomial.collectors;
+package src.polynomial.phaseSelector;
 
 import src.polynomial.PolynomialState;
 
-public interface PolynomialCollector {
+public interface PhaseSelector {
     int apply(PolynomialState state);
 }

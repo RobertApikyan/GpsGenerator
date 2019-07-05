@@ -6,8 +6,8 @@ import src.polynomial.GenericPolynomial;
 import src.polynomial.PolynomialOne;
 import src.polynomial.PolynomialState;
 import src.polynomial.PolynomialTwo;
-import src.polynomial.collectors.PolynomialCollector;
-import src.polynomial.collectors.SatelliteCollector;
+import src.polynomial.phaseSelector.PhaseSelector;
+import src.polynomial.phaseSelector.SatellitePhaseSelector;
 import src.polynomial.polynomial_processor.PolynomialProcessor;
 import src.satellites.SatellitesCaFactory;
 
@@ -41,7 +41,7 @@ public class Main {
         PolynomialProcessor p1 = new GenericPolynomial(new int[]{3,10},10);
         PolynomialProcessor p2 = new GenericPolynomial(new int[]{2,3,6,8,9,10},10);
 
-        PolynomialCollector sate1 = new SatelliteCollector(new int[]{2,6});
+        PhaseSelector sate1 = new SatellitePhaseSelector(new int[]{2,6});
 
         for (int i = 0; i < COMPLETE_CA; i++) {
             PolynomialState ps2 = p2.captureState();

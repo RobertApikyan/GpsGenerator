@@ -1,10 +1,9 @@
 package src.satellites;
 
 import src.polynomial.PolynomialTwo;
-import src.polynomial.collectors.SatelliteCollector;
+import src.polynomial.phaseSelector.SatellitePhaseSelector;
 
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
 /**
@@ -59,40 +58,40 @@ public class SatellitesCaFactory {
         return goldNumbers;
     }
 
-    public static List<SatelliteCollector> createSatelliteCollectors() {
+    public static List<SatellitePhaseSelector> createSatelliteCollectors() {
         return Arrays.asList(
-                new SatelliteCollector(SatellitesCaFactory.SAT_1),
-                new SatelliteCollector(SatellitesCaFactory.SAT_2),
-                new SatelliteCollector(SatellitesCaFactory.SAT_3),
-                new SatelliteCollector(SatellitesCaFactory.SAT_4),
-                new SatelliteCollector(SatellitesCaFactory.SAT_5),
-                new SatelliteCollector(SatellitesCaFactory.SAT_6),
-                new SatelliteCollector(SatellitesCaFactory.SAT_7),
-                new SatelliteCollector(SatellitesCaFactory.SAT_8),
-                new SatelliteCollector(SatellitesCaFactory.SAT_9),
-                new SatelliteCollector(SatellitesCaFactory.SAT_10),
-                new SatelliteCollector(SatellitesCaFactory.SAT_11),
-                new SatelliteCollector(SatellitesCaFactory.SAT_12),
-                new SatelliteCollector(SatellitesCaFactory.SAT_13),
-                new SatelliteCollector(SatellitesCaFactory.SAT_14),
-                new SatelliteCollector(SatellitesCaFactory.SAT_15),
-                new SatelliteCollector(SatellitesCaFactory.SAT_16),
-                new SatelliteCollector(SatellitesCaFactory.SAT_17),
-                new SatelliteCollector(SatellitesCaFactory.SAT_18),
-                new SatelliteCollector(SatellitesCaFactory.SAT_19),
-                new SatelliteCollector(SatellitesCaFactory.SAT_20),
-                new SatelliteCollector(SatellitesCaFactory.SAT_21),
-                new SatelliteCollector(SatellitesCaFactory.SAT_22),
-                new SatelliteCollector(SatellitesCaFactory.SAT_23),
-                new SatelliteCollector(SatellitesCaFactory.SAT_24),
-                new SatelliteCollector(SatellitesCaFactory.SAT_25),
-                new SatelliteCollector(SatellitesCaFactory.SAT_26),
-                new SatelliteCollector(SatellitesCaFactory.SAT_27),
-                new SatelliteCollector(SatellitesCaFactory.SAT_28),
-                new SatelliteCollector(SatellitesCaFactory.SAT_29),
-                new SatelliteCollector(SatellitesCaFactory.SAT_30),
-                new SatelliteCollector(SatellitesCaFactory.SAT_31),
-                new SatelliteCollector(SatellitesCaFactory.SAT_32)
+                new SatellitePhaseSelector(SatellitesCaFactory.SAT_1),
+                new SatellitePhaseSelector(SatellitesCaFactory.SAT_2),
+                new SatellitePhaseSelector(SatellitesCaFactory.SAT_3),
+                new SatellitePhaseSelector(SatellitesCaFactory.SAT_4),
+                new SatellitePhaseSelector(SatellitesCaFactory.SAT_5),
+                new SatellitePhaseSelector(SatellitesCaFactory.SAT_6),
+                new SatellitePhaseSelector(SatellitesCaFactory.SAT_7),
+                new SatellitePhaseSelector(SatellitesCaFactory.SAT_8),
+                new SatellitePhaseSelector(SatellitesCaFactory.SAT_9),
+                new SatellitePhaseSelector(SatellitesCaFactory.SAT_10),
+                new SatellitePhaseSelector(SatellitesCaFactory.SAT_11),
+                new SatellitePhaseSelector(SatellitesCaFactory.SAT_12),
+                new SatellitePhaseSelector(SatellitesCaFactory.SAT_13),
+                new SatellitePhaseSelector(SatellitesCaFactory.SAT_14),
+                new SatellitePhaseSelector(SatellitesCaFactory.SAT_15),
+                new SatellitePhaseSelector(SatellitesCaFactory.SAT_16),
+                new SatellitePhaseSelector(SatellitesCaFactory.SAT_17),
+                new SatellitePhaseSelector(SatellitesCaFactory.SAT_18),
+                new SatellitePhaseSelector(SatellitesCaFactory.SAT_19),
+                new SatellitePhaseSelector(SatellitesCaFactory.SAT_20),
+                new SatellitePhaseSelector(SatellitesCaFactory.SAT_21),
+                new SatellitePhaseSelector(SatellitesCaFactory.SAT_22),
+                new SatellitePhaseSelector(SatellitesCaFactory.SAT_23),
+                new SatellitePhaseSelector(SatellitesCaFactory.SAT_24),
+                new SatellitePhaseSelector(SatellitesCaFactory.SAT_25),
+                new SatellitePhaseSelector(SatellitesCaFactory.SAT_26),
+                new SatellitePhaseSelector(SatellitesCaFactory.SAT_27),
+                new SatellitePhaseSelector(SatellitesCaFactory.SAT_28),
+                new SatellitePhaseSelector(SatellitesCaFactory.SAT_29),
+                new SatellitePhaseSelector(SatellitesCaFactory.SAT_30),
+                new SatellitePhaseSelector(SatellitesCaFactory.SAT_31),
+                new SatellitePhaseSelector(SatellitesCaFactory.SAT_32)
         );
     }
 
