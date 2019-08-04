@@ -76,7 +76,6 @@ public abstract class PolynomialProcessor {
      */
     protected abstract int processNext();
 
-
     @Override
     public String toString() {
         StringBuilder builder = new StringBuilder();
@@ -89,5 +88,12 @@ public abstract class PolynomialProcessor {
 
     public int getRegisterSize() {
         return registerSize;
+    }
+
+    protected void setRegisterValues(int[] registerValues){
+        if (this.register.length != registerValues.length){
+            throw new IllegalArgumentException();
+        }
+        this.register=registerValues;
     }
 }
