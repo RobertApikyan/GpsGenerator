@@ -20,9 +20,9 @@ public class ParallelTwoFeedbackLFSR {
                 });
 
         final int lfsrRunLength = 1024;
-        final int lfsrLength = 10;
-        final int f1 = 7;
-        final int f2 = 10;
+        final int lfsrLength = 33;
+        final int f1 = 32;
+        final int f2 = 33;
         final int[] initialState = new int[lfsrLength];
 
         for (int i = 0; i < initialState.length; i++) {
@@ -30,13 +30,15 @@ public class ParallelTwoFeedbackLFSR {
         }
 
         final ParallelTwoFeedbackLFSR psr = new ParallelTwoFeedbackLFSR(executor, initialState, f1, f2);
-        Runnable psrBlock = new Runnable() {
-            @Override
-            public void run() {
-                final int[] output = psr.generate(lfsrRunLength);
-                System.out.println(Arrays.toString(output));
-            }
-        };
+        final int[] output = psr.generate(lfsrRunLength);
+        System.out.println(Arrays.toString(output));
+
+        final int[] gpOut = new int[lfsrRunLength];
+        GenericPolynomial gp = new GenericPolynomial(new int[]{f1,f2},lfsrLength);
+        for (int i = 0; i < lfsrRunLength; i++) {
+            gpOut[i] = gp.process();
+        }
+        System.out.println(Arrays.toString(gpOut));
     }
 
     private volatile boolean isFinished = false;
@@ -114,6 +116,7 @@ public class ParallelTwoFeedbackLFSR {
 
         boolean isFirstRoleSatisfied;
         boolean isSecondRoleSatisfied;
+        boolean isValid;
 
         do {
 
@@ -122,8 +125,13 @@ public class ParallelTwoFeedbackLFSR {
             k = i + f2;
 
             isFirstRoleSatisfied = i - n + f2 >= 0;
-            isSecondRoleSatisfied = i - n + 2 * f2 - f1 >= 0;
-        } while (!isFirstRoleSatisfied || !isSecondRoleSatisfied);
+//            isSecondRoleSatisfied = i - n + 2 * f2 - f1 >= 0;
+//            isValid = i > f2;
+        }
+        while (!isFirstRoleSatisfied
+//                || !isSecondRoleSatisfied
+        );
+//        while (!isValid);
 
         return new int[]{i, j, k};
     }
