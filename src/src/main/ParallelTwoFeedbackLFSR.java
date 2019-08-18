@@ -6,8 +6,6 @@ import src.polynomial.PolynomialState;
 import java.util.Arrays;
 import java.util.concurrent.*;
 
-import static src.utils.Utils.timeWatch;
-
 public class ParallelTwoFeedbackLFSR {
 
     public static void main(String[] args) {
@@ -19,26 +17,26 @@ public class ParallelTwoFeedbackLFSR {
                 new ArrayBlockingQueue<Runnable>(10, false) {
                 });
 
+        // required code sequence length
         final int lfsrRunLength = 1024;
+        // LFSR length
         final int lfsrLength = 33;
+        // first feedback position
         final int f1 = 32;
+        // second feedback position
         final int f2 = 33;
+        // initial state of registers
         final int[] initialState = new int[lfsrLength];
-
+        // setting all ones for initial state
         for (int i = 0; i < initialState.length; i++) {
             initialState[i] = 1;
         }
-
+        // initializing ParallelTwoFeedbackLFSR instance with parameters initial sate and f1 and f2
         final ParallelTwoFeedbackLFSR psr = new ParallelTwoFeedbackLFSR(executor, initialState, f1, f2);
+        // start generation process
         final int[] output = psr.generate(lfsrRunLength);
+        // print the output code sequences
         System.out.println(Arrays.toString(output));
-
-        final int[] gpOut = new int[lfsrRunLength];
-        GenericPolynomial gp = new GenericPolynomial(new int[]{f1,f2},lfsrLength);
-        for (int i = 0; i < lfsrRunLength; i++) {
-            gpOut[i] = gp.process();
-        }
-        System.out.println(Arrays.toString(gpOut));
     }
 
     private volatile boolean isFinished = false;
@@ -114,9 +112,8 @@ public class ParallelTwoFeedbackLFSR {
         int j;
         int k;
 
-        boolean isFirstRoleSatisfied;
-        boolean isSecondRoleSatisfied;
-        boolean isValid;
+        boolean isRoleSatisfied;
+
 
         do {
 
@@ -124,14 +121,9 @@ public class ParallelTwoFeedbackLFSR {
             j = i + f2 - f1;
             k = i + f2;
 
-            isFirstRoleSatisfied = i - n + f2 >= 0;
-//            isSecondRoleSatisfied = i - n + 2 * f2 - f1 >= 0;
-//            isValid = i > f2;
+            isRoleSatisfied = i - n + f2 >= 0;
         }
-        while (!isFirstRoleSatisfied
-//                || !isSecondRoleSatisfied
-        );
-//        while (!isValid);
+        while (!isRoleSatisfied);
 
         return new int[]{i, j, k};
     }
