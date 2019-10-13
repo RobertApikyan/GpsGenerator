@@ -10,4 +10,10 @@ public class Utils {
         block.run();
         return System.nanoTime() - startTime;
     }
+
+
+    public static void timeWatchPrint(String label,Runnable block){
+        System.out.println(label+" elapsedTime= "+timeWatch(block));
+    }
+
 }

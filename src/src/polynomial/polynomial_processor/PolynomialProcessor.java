@@ -90,6 +90,10 @@ public abstract class PolynomialProcessor {
         return registerSize;
     }
 
+    public int[] getExOrIndexes(){
+        return exOrIndexes;
+    }
+
     protected void setRegisterValues(int[] registerValues){
         if (this.register.length != registerValues.length){
             throw new IllegalArgumentException();

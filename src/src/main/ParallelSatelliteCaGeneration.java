@@ -2,7 +2,7 @@ package src.main;
 
 import src.generators.CaGenerator;
 import src.generators.DataUtils;
-import src.polynomial.GenericPolynomial;
+import src.polynomial.LFSR;
 import src.polynomial.PolynomialOne;
 import src.polynomial.PolynomialState;
 import src.polynomial.PolynomialTwo;
@@ -92,9 +92,9 @@ public class ParallelSatelliteCaGeneration {
         // initialize phase selectors for all satellites
         List<SatellitePhaseSelector> phaseSelectors = createSatelliteCollectors();
         // initialize first polynomial
-        GenericPolynomial p1 = new GenericPolynomial(new int[]{3, 10}, 10);
+        LFSR p1 = new LFSR(new int[]{3, 10}, 10);
         // initialize second polynomial
-        GenericPolynomial p2 = new GenericPolynomial(new int[]{2, 3, 6, 8, 9, 10}, 10);
+        LFSR p2 = new LFSR(new int[]{2, 3, 6, 8, 9, 10}, 10);
         // start the iteration for 1024 C/A code cycle
         for (int caIndex = 0; caIndex < COMPLETE_CA; caIndex++) {
             // generate output bit for first polynomial

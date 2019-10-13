@@ -4,9 +4,9 @@ import src.polynomial.polynomial_processor.PolynomialProcessor;
 
 import java.util.Arrays;
 
-public class GenericPolynomial extends PolynomialProcessor {
+public class LFSR extends PolynomialProcessor {
 
-    public GenericPolynomial(int[] exOrIndexes,int registersCount) {
+    public LFSR(int[] exOrIndexes, int registersCount) {
         super(exOrIndexes,registersCount);
     }
 

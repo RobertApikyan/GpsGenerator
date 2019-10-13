@@ -1,6 +1,6 @@
 package src.main;
 
-import src.polynomial.GenericPolynomial;
+import src.polynomial.LFSR;
 import src.polynomial.PolynomialState;
 
 import java.util.Arrays;
@@ -62,7 +62,8 @@ public class ParallelTwoFeedbackLFSR {
         return output;
     }
 
-    private void generateRange(final int[] output, PolynomialState initialState,
+    private void generateRange(final int[] output,
+                               PolynomialState initialState,
                                final int f1,
                                final int f2,
                                final int step) {
@@ -74,7 +75,7 @@ public class ParallelTwoFeedbackLFSR {
         final int j = indexes[1];
         final int k = indexes[2];
 
-        GenericPolynomial polynomial = new GenericPolynomial(new int[]{f1, f2}, initialState.getValues().length);
+        LFSR polynomial = new LFSR(new int[]{f1, f2}, initialState.getValues().length);
         polynomial.setState(initialState);
 
         for (int index = step; index < k; index++) {
