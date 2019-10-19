@@ -3,14 +3,11 @@ package src.main;
 import src.polynomial.LFSR;
 import src.polynomial.PolynomialState;
 import src.utils.ElapsedTimeCounter;
-import sun.jvm.hotspot.debugger.ThreadAccess;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.concurrent.ArrayBlockingQueue;
-import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 import java.util.function.Consumer;
@@ -26,10 +23,10 @@ public class ParallelLFSR {
             TimeUnit.MILLISECONDS,
             new ArrayBlockingQueue<Runnable>(100000, false) {
             }, runnable -> {
-                final Thread thread = new Thread(runnable);
-                thread.setDaemon(false);
-                return thread;
-            });
+        final Thread thread = new Thread(runnable);
+        thread.setDaemon(false);
+        return thread;
+    });
 
     public static void main(String[] args) {
 
@@ -37,7 +34,7 @@ public class ParallelLFSR {
         // Initial state of LFSR's registers, all set to 1
         final int[] initialState = new int[]{1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1};
         // The feedback indexes
-        final int[] exOrIndexes = new int[]{2, 3, 6, 8, 9,initialState.length - 1};
+        final int[] exOrIndexes = new int[]{2, 3, 6, 8, 9, initialState.length - 1};
         // The maximum period of LFSR, period = 2^registersCount - 1
         final int maxRun = (int) Math.pow(2, initialState.length) - 1;
 
@@ -58,7 +55,7 @@ public class ParallelLFSR {
             }
         });
 
-        System.out.println("Sequential\t"+timeElapseInSequential +"\t"+ Arrays.toString(linearOutputBits));
+        System.out.println("Sequential\t" + timeElapseInSequential + "\t" + Arrays.toString(linearOutputBits));
     }
 
     private Consumer<int[]> onCompleteListener;
