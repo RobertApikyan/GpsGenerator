@@ -1,6 +1,6 @@
 package src.main;
 
-import src.polynomial.LFSR;
+import src.polynomial.FibonacciLfsr;
 import src.polynomial.PolynomialState;
 
 import java.util.Arrays;
@@ -19,7 +19,7 @@ public class ParallelTwoFeedbackLFSR {
 
         // required code sequence length
         final int lfsrRunLength = 1024;
-        // LFSR length
+        // FibonacciLfsr length
         final int lfsrLength = 33;
         // first feedback position
         final int f1 = 32;
@@ -75,7 +75,7 @@ public class ParallelTwoFeedbackLFSR {
         final int j = indexes[1];
         final int k = indexes[2];
 
-        LFSR polynomial = new LFSR(new int[]{f1, f2}, initialState.getValues().length);
+        FibonacciLfsr polynomial = new FibonacciLfsr(new int[]{f1, f2}, initialState.getValues().length);
         polynomial.setState(initialState);
 
         for (int index = step; index < k; index++) {

@@ -1,7 +1,9 @@
-package src.main;
+package src.polynomial.parallel_galois_lfsr;
 
-import src.polynomial.LFSR;
+import com.sun.istack.internal.Nullable;
+import src.polynomial.GaloisLfsr;
 import src.polynomial.PolynomialState;
+import src.polynomial.polynomial_processor.PolynomialProcessor;
 import src.utils.ElapsedTimeCounter;
 
 import java.util.Arrays;
@@ -10,11 +12,42 @@ import java.util.HashMap;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
+import java.util.function.BiConsumer;
 import java.util.function.Consumer;
 
 import static src.utils.Utils.timeWatch;
 
-public class ParallelLFSR {
+public class GaloisParallelLFSR {
+
+    public static void main(String[] args) {
+
+        final GaloisParallelLFSR lfsr = new GaloisParallelLFSR();
+        // Initial state of Galois registers, all set to 1
+        final int[] initialState = new int[]{1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1};
+        // The feedback indexes
+        final int[] exOrIndexes = new int[]{2, 3, 6, 8, 9, initialState.length - 1};
+        // The maximum period of GaloisLFSR, period = 2^registersCount - 1
+        final int maxRun = (int) Math.pow(2, initialState.length) - 1;
+
+        // Parallel generation
+        final ElapsedTimeCounter etc = new ElapsedTimeCounter();
+        etc.start();
+        lfsr.generate(initialState, exOrIndexes, 0, outputBits -> {
+            final long timeElapseInParallel = etc.stop();
+            System.out.println("Parallel\t" + timeElapseInParallel + "\t" + Arrays.toString(outputBits));
+        });
+
+        // Linear generation
+        final int[] linearOutputBits = new int[maxRun];
+        final GaloisLfsr polynomial = new GaloisLfsr(exOrIndexes, initialState.length);
+        final long timeElapseInSequential = timeWatch(() -> {
+            for (int i = 0; i < maxRun; i++) {
+                linearOutputBits[i] = polynomial.process();
+            }
+        });
+
+        System.out.println("Sequential\t" + timeElapseInSequential + "\t" + Arrays.toString(linearOutputBits));
+    }
 
     // ThreadPool for parallel generation
     private ThreadPoolExecutor executor = new ThreadPoolExecutor(100,
@@ -28,73 +61,79 @@ public class ParallelLFSR {
         return thread;
     });
 
-    public static void main(String[] args) {
+    private boolean skipParallelBits;
 
-        final ParallelLFSR lfsr = new ParallelLFSR();
-        // Initial state of LFSR's registers, all set to 1
-        final int[] initialState = new int[]{1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1};
-        // The feedback indexes
-        final int[] exOrIndexes = new int[]{2, 3, 6, 8, 9, initialState.length - 1};
-        // The maximum period of LFSR, period = 2^registersCount - 1
-        final int maxRun = (int) Math.pow(2, initialState.length) - 1;
+    private volatile boolean isFinished = false;
 
-        // Parallel generation
-        final ElapsedTimeCounter etc = new ElapsedTimeCounter();
-//        etc.start();
-//        lfsr.generate(initialState, exOrIndexes, 0, outputBits -> {
-//            final long timeElapseInParallel = etc.stop();
-//            System.out.println("Parallel\t" + timeElapseInParallel+"\t"+ Arrays.toString(outputBits));
-//        });
+    public GaloisParallelLFSR() {
+        this.skipParallelBits = false;
+    }
 
-        // Linear generation
-        final int[] linearOutputBits = new int[maxRun];
-        final LFSR polynomial = new LFSR(exOrIndexes, initialState.length);
-        final long timeElapseInSequential = timeWatch(() -> {
-            for (int i = 0; i < maxRun; i++) {
-                linearOutputBits[i] = polynomial.process();
-            }
-        });
-
-        System.out.println("Sequential\t" + timeElapseInSequential + "\t" + Arrays.toString(linearOutputBits));
+    public GaloisParallelLFSR(boolean skipParallelBits) {
+        this.skipParallelBits = skipParallelBits;
     }
 
     private Consumer<int[]> onCompleteListener;
+    @Nullable
+    private BiConsumer<Integer, Integer> onEachStepGeneration;
 
     public void generate(int[] initialState,
                          int[] exOrIndexes,
                          int step,
                          Consumer<int[]> onCompleteListener) {
+        generate(initialState, exOrIndexes, new int[]{initialState.length}, step, onCompleteListener, null);
+    }
+
+    public void generate(int[] initialState,
+                         int[] exOrIndexes,
+                         int[] outputRegisters,
+                         int step,
+                         Consumer<int[]> onCompleteListener) {
+        generate(initialState, exOrIndexes, outputRegisters, step, onCompleteListener, null);
+    }
+
+    public void generate(int[] initialState,
+                         int[] exOrIndexes,
+                         int[] outputRegisters,
+                         int step,
+                         Consumer<int[]> onCompleteListener,
+                         BiConsumer<Integer, Integer> onEachStepGeneration) {
         this.onCompleteListener = onCompleteListener;
+        this.onEachStepGeneration = onEachStepGeneration;
         // Create the initial state
         final PolynomialState state = new PolynomialState(initialState);
-        // The maximum period of LFSR, period = 2^registersCount - 1
+        // The maximum period of GaloisLFSR, period = 2^registersCount - 1
         int maxRun = (int) Math.pow(2, state.getValues().length) - 1;
         // Initialize the output array with length maxRun
         int[] output = new int[maxRun];
+        isFinished = false;
         // Start the generation
-        generate(state, exOrIndexes, step, output);
+        generate(state, exOrIndexes, outputRegisters, step, output);
     }
 
     private void generate(PolynomialState state,
                           final int[] exOrIndexes,
+                          final int[] outputRegisters,
                           int step,
                           final int[] output) {
 
         // Defines the registers count
         final int registersCount = state.getValues().length;
-        // The maximum period of LFSR, period = 2^registersCount - 1
+        // The maximum period of GaloisLFSR, period = 2^registersCount - 1
         final int maxRun = (int) Math.pow(2, registersCount) - 1;
-        // Create the LFSR with specified feedback positions and registers count
-        final LFSR lfsr = new LFSR(exOrIndexes, registersCount);
-        // Set current state of LFSR
+        // Create the GaloisLFSR with specified feedback positions and registers count
+        final PolynomialProcessor lfsr = new GaloisLfsr(exOrIndexes, registersCount, outputRegisters);
+        // Set current state of GaloisLFSR
         lfsr.setState(state);
 
         // Hold required states for defining upcoming state with state modulo addition
         final HashMap<Integer, PolynomialState> states = new HashMap<Integer, PolynomialState>();
 
+        // Put the So state
+        states.put(step, null);
         // Define the required states
         for (int feedbackPosition : exOrIndexes) {
-            states.put(registersCount - feedbackPosition + step, null);
+            states.put(step + feedbackPosition -1, null);
         }
 
         // Start output generation for provided step
@@ -102,6 +141,7 @@ public class ParallelLFSR {
 
             // Check for end of the generation
             if (generationStep == maxRun) {
+                isFinished = true;
                 onCompleteListener.accept(output);
                 break;
             }
@@ -114,6 +154,9 @@ public class ParallelLFSR {
             // Generates and save the output bit
             final int outputBit = lfsr.process();
             output[generationStep] = outputBit;
+            if (onEachStepGeneration != null) {
+                onEachStepGeneration.accept(generationStep, outputBit);
+            }
 
             // Check if all required states for parallel generation are ready
             if (generationStep == Collections.max(states.keySet())) {
@@ -129,14 +172,28 @@ public class ParallelLFSR {
                         }
                     }
                     final PolynomialState finalState = sumState;
-                    // Post the parallel generation to the new Java Thread
-                    executor.execute(() -> {
+
+                    Runnable nextGeneration = () -> {
                         // Pass the calculated state, exOrIndexes, parallelStep, output
-                        generate(finalState, exOrIndexes, parallelStep, output);
-                    });
+                        generate(finalState, exOrIndexes, outputRegisters, parallelStep, output);
+                    };
+                    // Post the parallel generation to the new Java Thread
+                    if (skipParallelBits) {
+                        nextGeneration.run();
+                    } else {
+                        executor.execute(nextGeneration);
+                    }
+
+                    // we break parallel bits generation, mostly it's needed for correlation
+                    if (skipParallelBits) {
+                        break;
+                    }
                 }
             }
         }
     }
 
+    public boolean isFinished() {
+        return isFinished;
+    }
 }

@@ -17,8 +17,13 @@ public class PolynomialTwo extends PolynomialProcessor {
 
     @Override
     public int processNext() {
-        byte outPut = exOr(goldNumbers);
-        shift(exOr());
+        byte outPut = exOrFibonacci(goldNumbers);
+        shift(exOrFibonacci());
         return outPut;
+    }
+
+    @Override
+    protected int processPrev() {
+        return 0;
     }
 }

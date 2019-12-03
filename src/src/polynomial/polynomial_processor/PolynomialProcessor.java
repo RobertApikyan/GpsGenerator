@@ -3,6 +3,8 @@ package src.polynomial.polynomial_processor;
 import src.generators.DataUtils;
 import src.polynomial.PolynomialState;
 
+import java.util.Arrays;
+
 /**
  * Created by Robert on 30.09.2017.
  */
@@ -18,16 +20,24 @@ public abstract class PolynomialProcessor {
         register = createBytes();
     }
 
-    protected byte exOr() {
-        return exOr(exOrIndexes);
+    protected byte exOrFibonacci() {
+        return exOrFibonacci(exOrIndexes);
     }
 
-    protected byte exOr(int[] exOrIndexes) {
+    protected byte exOrGalois(){
+        return exOrGalois(exOrIndexes);
+    }
+
+    protected byte exOrGalois(int[] exOrIndexes){
+        return DataUtils.exOrParallel(register,exOrIndexes);
+    }
+
+    protected byte exOrFibonacci(int[] exOrIndexes) {
        return DataUtils.exOr(register,exOrIndexes);
     }
 
     /**
-     * @param startValue, the value from exOr
+     * @param startValue, the value from exOrFibonacci
      * @return output value
      */
     protected int shift(int startValue) {
@@ -69,12 +79,14 @@ public abstract class PolynomialProcessor {
      * logic related with shift register
      * Example simple 1+x3+x10
      * byte process(){
-     * return shift(exOr);
+     * return shift(exOrFibonacci);
      * }
      *
      * @return outPut value
      */
     protected abstract int processNext();
+
+    protected abstract int processPrev();
 
     @Override
     public String toString() {
@@ -92,6 +104,11 @@ public abstract class PolynomialProcessor {
 
     public int[] getExOrIndexes(){
         return exOrIndexes;
+    }
+
+    public void setState(PolynomialState state){
+        int[] values = state.getValues();
+        setRegisterValues(Arrays.copyOf(values,values.length));
     }
 
     protected void setRegisterValues(int[] registerValues){

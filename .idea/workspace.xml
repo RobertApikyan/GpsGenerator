@@ -2,9 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48641ffd-cbba-45fc-982b-4c8c9c74f259" name="Default" comment="1. parallel ca code generation">
+      <change afterPath="$PROJECT_DIR$/src/src/corellation/Correlation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/src/main/CompareFibonacciPolynomialStates.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/src/main/CompareGaloisPolynomialStates.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/src/main/ParallelCaCorrelation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/src/polynomial/FibonacciLfsr.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/src/polynomial/GaloisLfsr.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/src/polynomial/parallelCaGenerator/ParallelCa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/src/polynomial/parallel_fibonacci_lfsr/FibonacciParallelLFSR.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CAcodeGenerator/src/detectors/GoldNumberDetector.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CAcodeGenerator/src/detectors/GoldNumberDetector.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CAcodeGenerator/src/generators/DataUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CAcodeGenerator/src/generators/DataUtils.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CAcodeGenerator/src/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CAcodeGenerator/src/main/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/main/ParallelLFSR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/main/ParallelLFSR.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CAcodeGenerator/src/main/ParallelAndSequentialLfsrOutputGeneration.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CAcodeGenerator/src/main/ParallelAndSequentialLfsrOutputGeneration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CAcodeGenerator/src/main/ParallelLFSR$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CAcodeGenerator/src/main/ParallelLFSR.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CAcodeGenerator/src/main/ParallelSatelliteCaGeneration.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CAcodeGenerator/src/main/ParallelSatelliteCaGeneration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CAcodeGenerator/src/main/ParallelTwoFeedbackLFSR.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CAcodeGenerator/src/main/ParallelTwoFeedbackLFSR.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CAcodeGenerator/src/polynomial/LFSR.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CAcodeGenerator/src/polynomial/PolynomialOne.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CAcodeGenerator/src/polynomial/PolynomialOne.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CAcodeGenerator/src/polynomial/PolynomialTwo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CAcodeGenerator/src/polynomial/PolynomialTwo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CAcodeGenerator/src/polynomial/polynomial_processor/PolynomialProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CAcodeGenerator/src/polynomial/polynomial_processor/PolynomialProcessor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CAcodeGenerator/src/utils/Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CAcodeGenerator/src/utils/Utils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/detectors/GoldNumberDetector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/detectors/GoldNumberDetector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/generators/DataUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/generators/DataUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/main/ParallelAndSequentialLfsrOutputGeneration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/main/ParallelAndSequentialLfsrOutputGeneration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/main/ParallelLFSR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/polynomial/parallel_galois_lfsr/GaloisParallelLFSR.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/main/ParallelSatelliteCaGeneration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/main/ParallelSatelliteCaGeneration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/main/ParallelTwoFeedbackLFSR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/main/ParallelTwoFeedbackLFSR.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/polynomial/LFSR.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/polynomial/PolynomialOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/polynomial/PolynomialOne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/polynomial/PolynomialTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/polynomial/PolynomialTwo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/polynomial/polynomial_processor/PolynomialProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/polynomial/polynomial_processor/PolynomialProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/utils/Utils.java" afterDir="false" />
     </list>
     <ignored path="CAcodeGenerator.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,22 +69,35 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/src/main/ParallelLFSR.java">
+        <entry file="file://$PROJECT_DIR$/src/src/main/CompareGaloisPolynomialStates.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="34" column="75" selection-start-line="34" selection-start-column="75" selection-end-line="34" selection-end-column="75" />
+            <state relative-caret-position="180">
+              <caret line="20" column="84" selection-start-line="20" selection-start-column="84" selection-end-line="20" selection-end-column="84" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/src/polynomial/GaloisLfsr.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#782#783#0" expanded="true" />
+                <element signature="e#806#807#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/util/concurrent/ArrayBlockingQueue.java">
+        <entry file="file://$PROJECT_DIR$/src/src/polynomial/parallelCaGenerator/ParallelCa.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3060">
-              <caret line="251" column="47" selection-start-line="251" selection-start-column="47" selection-end-line="251" selection-end-column="47" />
+            <state relative-caret-position="345">
+              <caret line="39" column="10" lean-forward="true" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -61,71 +105,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/src/utils/Utils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="37" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="37" />
+            <state relative-caret-position="225">
+              <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/src/main/ParallelSatelliteCaGeneration.java">
+        <entry file="file://$PROJECT_DIR$/src/src/main/CompareFibonacciPolynomialStates.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="33" column="34" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
+            <state relative-caret-position="255">
+              <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/src/utils/ElapsedTimeCounter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="31" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/src/polynomial/LFSR.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="23" selection-start-column="23" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/lang/Thread.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19200">
-              <caret line="1355" column="22" selection-start-line="1355" selection-start-column="22" selection-end-line="1355" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/src/main/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="32" column="75" selection-start-line="32" selection-start-column="75" selection-end-line="32" selection-end-column="75" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/src/main/RecursionVsIteration.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -133,11 +126,56 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/src/main/ParallelAndSequentialLfsrOutputGeneration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
+            <state relative-caret-position="195">
               <caret line="19" selection-start-line="19" selection-end-line="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/src/main/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="44" column="11" lean-forward="true" selection-start-line="44" selection-start-column="11" selection-end-line="44" selection-end-column="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/src/polynomial/parallel_galois_lfsr/GaloisParallelLFSR.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="23" column="4" lean-forward="true" selection-start-line="23" selection-start-column="4" selection-end-line="49" selection-end-column="3" />
+              <folding>
+                <marker date="1574656245121" expanded="true" signature="679:1521" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/src/polynomial/parallel_fibonacci_lfsr/FibonacciParallelLFSR.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="398">
+              <caret line="47" column="111" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="47" selection-end-column="111" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/src/main/ParallelCaCorrelation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -148,14 +186,13 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Class" />
+        <option value="Kotlin File" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>1 0 1 1 1 1 1 1 1 1</find>
-      <find>1 0 0 1 1 1 1 1 1 1</find>
       <find>0 1 0 1 1 1 1 1 1 1</find>
       <find>1 1 0 0 0 1 1 1 1 1</find>
       <find>1 1 0 0 1 1 1 1 1 1</find>
@@ -184,6 +221,8 @@
       <find>lock</find>
       <find>0 1 0 1 1 1 0 1 0 0</find>
       <find>0 0 1 0 1 1 0 1 0 0</find>
+      <find>111111111100011100010011101100101011101111010100011110100101010000010111111110101010101111010000111010010001100101101011001111010110001100111111001010101001100110010100111110100111000010001101100100010100110111101110101011100110011101110111001110101001110100000111101101110000110001001010010110011010001000101101001011101001100010110000001010010010111110111100011000110111011000011110010011100101100010000110111111100111000110101001010000100001001011011111010111000101110010000111110110101010001011110110011100111110000011100100101011001011110010111000001010110110011000011010110111010001010111111010001110011011100101000110100000011001001000100000100110110100111100110101011000010111011010001100001001111111011100011110000001110110110001010001001100100000110100100111101111100010101011010000101000000010110110111100111100010001111110110001110101101010000110011011000001100000000110110110101110101111000010101001000010110010011000001000100100000010000000001001001001101001101011111001100011111001000111011111100001110000000</find>
+      <find>out</find>
     </findStrings>
     <replaceStrings>
       <replace>int</replace>
@@ -193,73 +232,74 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="parallel_lfsr_generation" />
+        <entry key="$PROJECT_DIR$" value="parallel_and_sequential_generation" />
       </map>
     </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/src/polynomial/PolinomialNeptun.kt" />
-        <option value="$PROJECT_DIR$/src/src/polynomial/PolynomialNeptun.kt" />
-        <option value="$PROJECT_DIR$/src/src/polynomial/PolynomialNeptun.java" />
-        <option value="$PROJECT_DIR$/src/src/polynomial/PolynomialNeptune.java" />
-        <option value="$PROJECT_DIR$/src/src/polynomial/PolynomialProcessorWatcher.java" />
-        <option value="$PROJECT_DIR$/src/src/polynomial/polynomial_processor/PolynomialProcessorWatcher.java" />
-        <option value="$PROJECT_DIR$/src/src/polynomial/ShiftWatcher.java" />
-        <option value="$PROJECT_DIR$/src/src/polynomial/polynomial_processor/PolynomialProcessorNotifier.java" />
-        <option value="$PROJECT_DIR$/src/src/polynomial/collectors/CollectorNotifier.java" />
-        <option value="$PROJECT_DIR$/src/src/polynomial/collectors/ShiftCollector.java" />
-        <option value="$PROJECT_DIR$/src/src/polynomial/collectors/PolynomialCollectorNotifier.java" />
-        <option value="$PROJECT_DIR$/src/src/polynomial/collectors/notifier/PolynomialCollectorNotifier.java" />
-        <option value="$PROJECT_DIR$/src/src/polynomial/collectors/NodeCollector.java" />
-        <option value="$PROJECT_DIR$/src/src/polynomial/collectors/notifier/SimplePolynomialCollectorNotifier.java" />
-        <option value="$PROJECT_DIR$/src/src/polynomial/collectors/PolynomialNodeCollector.java" />
-        <option value="$PROJECT_DIR$/src/src/polynomial/collectors/notifier/SimplePolynomialStateChangeNotifier.java" />
         <option value="$PROJECT_DIR$/src/src/polynomial/collectors/PolynomialShiftCollector.java" />
         <option value="$PROJECT_DIR$/src/src/generators/DataGenerator.java" />
-        <option value="$PROJECT_DIR$/src/src/demodulators/CaDemodulator.java" />
         <option value="$PROJECT_DIR$/src/src/generators/CaGenerator.java" />
         <option value="$PROJECT_DIR$/src/src/modulators/CaModulator.java" />
-        <option value="$PROJECT_DIR$/src/src/detectors/GoldNumberDetector.java" />
-        <option value="$PROJECT_DIR$/src/src/polynomial/PolynomialOne.java" />
-        <option value="$PROJECT_DIR$/src/src/polynomial/PolynomialTwo.java" />
         <option value="$PROJECT_DIR$/src/test/PolynomialTest.java" />
         <option value="$PROJECT_DIR$/src/src/polynomial/collectors/PolynomialCollector.java" />
         <option value="$PROJECT_DIR$/src/src/polynomial/collectors/SatelliteCollector.java" />
         <option value="$PROJECT_DIR$/src/src/satellites/SatellitesCaFactory.java" />
-        <option value="$PROJECT_DIR$/src/src/generators/DataUtils.java" />
         <option value="$PROJECT_DIR$/src/src/polynomial/phaseSelector/PolynomialCollector.java" />
         <option value="$PROJECT_DIR$/src/src/polynomial/phaseSelector/PhaseSelector.java" />
         <option value="$PROJECT_DIR$/src/src/polynomial/phaseSelector/SatellitePhaseSelector.java" />
-        <option value="$PROJECT_DIR$/src/src/main/ParallelSatelliteCaGeneration.java" />
         <option value="$PROJECT_DIR$/src/src/main/ParallelTwoFeadbackBaseShiftRegister.kt" />
         <option value="$PROJECT_DIR$/src/src/main/ParallelTwoFeedbackBaseShiftRegister.kt" />
         <option value="$PROJECT_DIR$/src/src/main/ParallelTwoFeadbackBaseShiftRegister.java" />
         <option value="$PROJECT_DIR$/src/src/main/ParallelTwoFeedbackBaseShiftRegister.java" />
-        <option value="$PROJECT_DIR$/src/src/polynomial/polynomial_processor/PolynomialProcessor.java" />
         <option value="$PROJECT_DIR$/src/src/polynomial/PolynomialState.java" />
         <option value="$PROJECT_DIR$/src/src/polynomial/GenericPolynomial.java" />
         <option value="$PROJECT_DIR$/src/src/polynomial/GenericLFSR.java" />
-        <option value="$PROJECT_DIR$/src/src/polynomial/LFSR.java" />
         <option value="$PROJECT_DIR$/src/src/utils/ElapsedTimeCounter.kt" />
         <option value="$PROJECT_DIR$/src/src/utils/ElapsedTimeCounter.java" />
         <option value="$PROJECT_DIR$/src/src/main/ParallelTwoFeedbackLFSR.java" />
         <option value="$PROJECT_DIR$/src/src/main/RecurstionVsIteration.java" />
-        <option value="$PROJECT_DIR$/src/src/utils/Utils.java" />
-        <option value="$PROJECT_DIR$/src/src/main/ParallelAndSequentialLfsrOutputGeneration.java" />
         <option value="$PROJECT_DIR$/src/src/main/RecursionVsIteration.java" />
-        <option value="$PROJECT_DIR$/src/src/main/Main.java" />
+        <option value="$PROJECT_DIR$/src/src/polynomial/LFSR.java" />
+        <option value="$PROJECT_DIR$/src/src/demodulators/CaDemodulator.java" />
         <option value="$PROJECT_DIR$/src/src/main/ParallelLFSR.java" />
+        <option value="$PROJECT_DIR$/src/src/polynomial/LfsrGroup.java" />
+        <option value="$PROJECT_DIR$/src/src/main/Test.java" />
+        <option value="$PROJECT_DIR$/src/src/main/ParallelCa.java" />
+        <option value="$PROJECT_DIR$/src/src/corellation/Corellation.java" />
+        <option value="$PROJECT_DIR$/src/src/polynomial/parallel_lfsr/ParallelLFSR.java" />
+        <option value="$PROJECT_DIR$/src/src/corellation/Correlation.java" />
+        <option value="$PROJECT_DIR$/src/src/main/ParallelCaCorrelation.java" />
+        <option value="$PROJECT_DIR$/src/src/polynomial/parallel_fibonacci_lfsr/ParallelLFSR.java" />
+        <option value="$PROJECT_DIR$/src/src/main/ComparePolinomialStates.java" />
+        <option value="$PROJECT_DIR$/src/src/detectors/GoldNumberDetector.java" />
+        <option value="$PROJECT_DIR$/src/src/generators/DataUtils.java" />
+        <option value="$PROJECT_DIR$/src/src/polynomial/GaloisLfsr.java" />
+        <option value="$PROJECT_DIR$/src/src/polynomial/PolynomialTwo.java" />
+        <option value="$PROJECT_DIR$/src/src/polynomial/PolynomialOne.java" />
+        <option value="$PROJECT_DIR$/src/src/main/ComparePolynomialStates.java" />
+        <option value="$PROJECT_DIR$/src/src/polynomial/parallel_galois_lfsr/ParallelLFSR.java" />
+        <option value="$PROJECT_DIR$/src/src/polynomial/FibonacciLfsr.java" />
+        <option value="$PROJECT_DIR$/src/src/polynomial/polynomial_processor/PolynomialProcessor.java" />
+        <option value="$PROJECT_DIR$/src/src/main/ParallelAndSequentialLfsrOutputGeneration.java" />
+        <option value="$PROJECT_DIR$/src/src/main/CompareGaloisPolynomialStates.java" />
+        <option value="$PROJECT_DIR$/src/src/polynomial/parallel_galois_lfsr/GaloisParallelLFSR.java" />
+        <option value="$PROJECT_DIR$/src/src/main/ParallelSatelliteCaGeneration.java" />
+        <option value="$PROJECT_DIR$/src/src/utils/Utils.java" />
+        <option value="$PROJECT_DIR$/src/src/polynomial/parallelCaGenerator/ParallelCa.java" />
+        <option value="$PROJECT_DIR$/src/src/main/Main.java" />
       </list>
     </option>
   </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="height" value="814" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -267,8 +307,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -292,14 +330,38 @@
               <item name="GpsGenerator" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="generators" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CAcodeGenerator" type="b2602c69:ProjectViewProjectNode" />
               <item name="GpsGenerator" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="polynomial" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CAcodeGenerator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GpsGenerator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="polynomial" type="462c0819:PsiDirectoryNode" />
+              <item name="parallel_fibonacci_lfsr" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CAcodeGenerator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GpsGenerator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="polynomial" type="462c0819:PsiDirectoryNode" />
+              <item name="parallel_galois_lfsr" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CAcodeGenerator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GpsGenerator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="polynomial" type="462c0819:PsiDirectoryNode" />
+              <item name="parallelCaGenerator" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CAcodeGenerator" type="b2602c69:ProjectViewProjectNode" />
@@ -312,6 +374,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -342,6 +406,8 @@
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="src.main" />
+      <recent name="src.polynomial.parallel_galois_lfsr" />
+      <recent name="src.polynomial" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -507,32 +573,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CompareFibonacciPolynomialStates" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.main.CompareFibonacciPolynomialStates" />
+      <module name="CAcodeGenerator" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="src.main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CompareGaloisPolynomialStates" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.main.CompareGaloisPolynomialStates" />
+      <module name="CAcodeGenerator" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="src.main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GaloisParallelLFSR" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.polynomial.parallel_galois_lfsr.GaloisParallelLFSR" />
+      <module name="CAcodeGenerator" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="src.polynomial.parallel_galois_lfsr.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="src.main.Main" />
       <module name="CAcodeGenerator" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="src.polynomial.collectors.notifier.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ParallelAndSequentialLfsrOutputGeneration" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.main.ParallelAndSequentialLfsrOutputGeneration" />
-      <module name="CAcodeGenerator" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="VM_PARAMETERS" value="-Xmx4g" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="src.main.*" />
@@ -543,41 +629,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ParallelLFSR" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.main.ParallelLFSR" />
+    <configuration name="ParallelCa" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.polynomial.parallelCaGenerator.ParallelCa" />
       <module name="CAcodeGenerator" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="src.main.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ParallelTwoFeedbackLFSR" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.main.ParallelTwoFeedbackLFSR" />
-      <module name="CAcodeGenerator" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="src.main.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RecursionVsIteration" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.main.RecursionVsIteration" />
-      <module name="CAcodeGenerator" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="src.main.*" />
+          <option name="PATTERN" value="src.polynomial.parallelCaGenerator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -643,20 +701,20 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.CompareFibonacciPolynomialStates" />
+      <item itemvalue="Application.CompareGaloisPolynomialStates" />
+      <item itemvalue="Application.GaloisParallelLFSR" />
+      <item itemvalue="Application.ParallelCa" />
       <item itemvalue="Application.Main" />
-      <item itemvalue="Application.ParallelAndSequentialLfsrOutputGeneration" />
-      <item itemvalue="Application.ParallelLFSR" />
-      <item itemvalue="Application.ParallelTwoFeedbackLFSR" />
-      <item itemvalue="Application.RecursionVsIteration" />
       <item itemvalue="JUnit.PolynomialTest" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.ParallelLFSR" />
-        <item itemvalue="Application.RecursionVsIteration" />
-        <item itemvalue="Application.ParallelAndSequentialLfsrOutputGeneration" />
-        <item itemvalue="Application.ParallelTwoFeedbackLFSR" />
+        <item itemvalue="Application.ParallelCa" />
+        <item itemvalue="Application.GaloisParallelLFSR" />
+        <item itemvalue="Application.CompareGaloisPolynomialStates" />
+        <item itemvalue="Application.CompareFibonacciPolynomialStates" />
       </list>
     </recent_temporary>
   </component>
@@ -728,7 +786,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570960579545</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="1. parallel ca code generation">
+      <created>1571493151094</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1571493151094</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -743,9 +808,10 @@
     <option name="totallyTimeSpent" value="57803000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="814" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49916527" visible="true" weight="0.3311874" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49916527" visible="true" weight="0.2761087" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="3" sideWeight="0.5008347" side_tool="true" weight="0.25" />
@@ -753,17 +819,17 @@
       <window_info id="Image Layers" order="5" />
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.07052186" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.53614455" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.7639665" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.30995792" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30609417" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.35203367" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.35794184" />
       <window_info anchor="bottom" id="Application Servers" order="8" />
-      <window_info anchor="bottom" id="Messages" order="9" weight="0.05042017" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.44880787" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.2173913" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.47228914" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.44819278" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.5072289" />
       <window_info anchor="bottom" id="IDEtalk Messages" order="12" />
       <window_info anchor="bottom" id="Changes" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -778,6 +844,46 @@
       <window_info anchor="right" id="Capture Analysis" order="9" />
       <window_info anchor="right" id="Theme Preview" order="10" />
     </layout>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -800,12 +906,6 @@
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/src/main/ParallelLFSR.java</url>
-          <line>32</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
@@ -819,7 +919,13 @@
         <watch expression="caGenerator.generate()" language="JAVA" />
       </configuration>
       <configuration name="Application">
-        <watch expression="initialState.length" language="JAVA" />
+        <watch expression="source.getBytes()" language="JAVA" />
+        <watch expression="new double[]{1,2,3,4,5" language="JAVA" />
+        <watch expression="bytes.length" language="JAVA" />
+        <watch expression="register" language="JAVA" />
+        <watch expression="exOrIndexes" language="JAVA" />
+        <watch expression="exOrIndex" language="JAVA" />
+        <watch expression="fl" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
@@ -876,6 +982,41 @@
     </expressions>
     <expressions id="watch">
       <expression>
+        <expression-string>fl</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>exOrIndex</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>exOrIndexes</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>register</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>bytes.length</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>new double[]{1,2,3,4,5</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>source.getBytes()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>initialState.length</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
@@ -890,205 +1031,13 @@
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>output</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>Collections.max(states.keySet())</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>parallelStep</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>states.keySet()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>states</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>feedbackPositions[i]</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>registersCount</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/src/polynomial/collectors/PolynomialNodeCollector.java" />
-    <entry file="file://$PROJECT_DIR$/src/src/polynomial/collectors/notifier/PolynomialStateChangeListener.java" />
-    <entry file="file://$PROJECT_DIR$/src/src/polynomial/collectors/notifier/SimplePolynomialStateChangeNotifier.java" />
-    <entry file="file://$PROJECT_DIR$/src/src/detectors/Detector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="8" lean-forward="true" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/src/demodulators/Demodulator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/src/demodulators/CaDemodulator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="37" column="42" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="42" />
-          <folding>
-            <element signature="e#625#634#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/src/generators/CaGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
-          <folding>
-            <element signature="e#595#596#0" expanded="true" />
-            <element signature="e#682#683#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/src/generators/DataGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/src/generators/Generator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/src/modulators/CaModulator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
-          <folding>
-            <element signature="e#704#713#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/src/modulators/Modulator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/PolynomialTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1410">
-          <caret line="94" column="59" selection-start-line="94" selection-start-column="59" selection-end-line="94" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/src/polynomial/PolynomialOne.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/src/polynomial/PolynomialTwo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/io/BufferedWriter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="519">
-          <caret line="86" column="11" selection-start-line="86" selection-start-column="11" selection-end-line="86" selection-end-column="11" />
-          <folding>
-            <element signature="e#2279#2280#0" expanded="true" />
-            <element signature="e#2327#2328#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/io/BufferedOutputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="37" column="6" selection-start-line="37" selection-start-column="6" selection-end-line="37" selection-end-column="6" />
-          <folding>
-            <element signature="e#1188#1189#0" expanded="true" />
-            <element signature="e#1219#1220#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/src/detectors/GoldNumberDetector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="27" column="68" selection-start-line="27" selection-start-column="68" selection-end-line="27" selection-end-column="68" />
-          <folding>
-            <element signature="e#804#813#0" expanded="true" />
-            <element signature="e#864#873#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/io/FileOutputStream.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1089">
           <caret line="99" column="11" selection-start-line="99" selection-start-column="11" selection-end-line="99" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/src/satellites/SatellitesCaFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="91" column="71" selection-start-line="91" selection-start-column="71" selection-end-line="91" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/src/polynomial/phaseSelector/PhaseSelector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/src/polynomial/phaseSelector/SatellitePhaseSelector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/src/polynomial/AsyncLopper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -1139,31 +1088,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/src/polynomial/polynomial_processor/PolynomialProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1215">
-          <caret line="93" column="27" selection-start-line="93" selection-start-column="27" selection-end-line="93" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1566#1567#0" expanded="true" />
-            <element signature="e#1618#1619#0" expanded="true" />
-            <element signature="e#2211#2212#0" expanded="true" />
-            <element signature="e#2246#2247#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/src/generators/DataUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="50" column="46" selection-start-line="50" selection-start-column="46" selection-end-line="50" selection-end-column="46" />
-          <folding>
-            <element signature="e#1350#1351#0" expanded="true" />
-            <element signature="e#1409#1410#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/util/concurrent/locks/ReentrantLock.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1065">
@@ -1192,24 +1116,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/src/polynomial/PolynomialState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#182#183#0" expanded="true" />
-            <element signature="e#227#228#0" expanded="true" />
-            <element signature="e#269#270#0" expanded="true" />
-            <element signature="e#332#333#0" expanded="true" />
-            <element signature="e#379#380#0" expanded="true" />
-            <element signature="e#416#417#0" expanded="true" />
-            <element signature="e#874#875#0" expanded="true" />
-            <element signature="e#903#904#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/util/concurrent/ThreadPoolExecutor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4230">
@@ -1225,71 +1131,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/src/utils/ElapsedTimeCounter.kt" />
-    <entry file="file://$PROJECT_DIR$/src/src/main/ParallelTwoFeedbackLFSR.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="70" column="35" selection-start-line="70" selection-start-column="35" selection-end-line="70" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/util/function/Consumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/src/main/ParallelLFSR.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="34" column="75" selection-start-line="34" selection-start-column="75" selection-end-line="34" selection-end-column="75" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/util/concurrent/ArrayBlockingQueue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3060">
           <caret line="251" column="47" selection-start-line="251" selection-start-column="47" selection-end-line="251" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/src/utils/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="37" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/src/main/ParallelSatelliteCaGeneration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="33" column="34" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/src/utils/ElapsedTimeCounter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="31" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/src/polynomial/LFSR.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="23" selection-start-column="23" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1300,16 +1145,227 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/main/ParallelCA.kt" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/util/function/Consumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/detectors/Detector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/polynomial/phaseSelector/PhaseSelector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/polynomial/LfsrGroup.java" />
+    <entry file="file://$PROJECT_DIR$/src/src/polynomial/phaseSelector/SatellitePhaseSelector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#437#438#0" expanded="true" />
+            <element signature="e#475#476#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/main/Test.java" />
+    <entry file="file://$PROJECT_DIR$/src/src/demodulators/CaDemodulator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/generators/CaGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="e#336#337#0" expanded="true" />
+            <element signature="e#376#377#0" expanded="true" />
+            <element signature="e#601#602#0" expanded="true" />
+            <element signature="e#688#689#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/polynomial/polynomial_processor/FibonaciLfsr.java" />
+    <entry file="file://$PROJECT_DIR$/src/src/detectors/GoldNumberDetector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="37" column="32" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/polynomial/AsyncLopper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/polynomial/PolynomialState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#182#183#0" expanded="true" />
+            <element signature="e#227#228#0" expanded="true" />
+            <element signature="e#269#270#0" expanded="true" />
+            <element signature="e#332#333#0" expanded="true" />
+            <element signature="e#379#380#0" expanded="true" />
+            <element signature="e#416#417#0" expanded="true" />
+            <element signature="e#874#875#0" expanded="true" />
+            <element signature="e#903#904#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/corellation/Correlation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/polynomial/PolynomialOne.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#309#310#0" expanded="true" />
+            <element signature="e#348#349#0" expanded="true" />
+            <element signature="e#394#395#0" expanded="true" />
+            <element signature="e#439#440#0" expanded="true" />
+            <element signature="e#488#489#0" expanded="true" />
+            <element signature="e#512#513#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/polynomial/PolynomialTwo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="17" />
+          <folding>
+            <element signature="e#667#668#0" expanded="true" />
+            <element signature="e#691#692#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/main/ParallelTwoFeedbackLFSR.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/polynomial/FibonacciLfsr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#827#828#0" expanded="true" />
+            <element signature="e#851#852#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/generators/DataUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="73" selection-start-line="73" selection-end-line="73" />
+          <folding>
+            <element signature="e#1350#1351#0" expanded="true" />
+            <element signature="e#1409#1410#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/polynomial/polynomial_processor/PolynomialProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#765#766#0" expanded="true" />
+            <element signature="e#832#833#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/satellites/SatellitesCaFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="24" column="51" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/main/ParallelSatelliteCaGeneration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="26" column="15" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/src/main/RecursionVsIteration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+        <state relative-caret-position="315">
+          <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/utils/ElapsedTimeCounter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/utils/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/main/CompareFibonacciPolynomialStates.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/src/main/ParallelAndSequentialLfsrOutputGeneration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
+        <state relative-caret-position="195">
           <caret line="19" selection-start-line="19" selection-end-line="19" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1317,10 +1373,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/main/ParallelCaCorrelation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/polynomial/parallelCaGenerator/ParallelCa.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="39" column="10" lean-forward="true" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/main/CompareGaloisPolynomialStates.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="20" column="84" selection-start-line="20" selection-start-column="84" selection-end-line="20" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/polynomial/GaloisLfsr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+          <folding>
+            <element signature="e#782#783#0" expanded="true" />
+            <element signature="e#806#807#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/polynomial/parallel_galois_lfsr/GaloisParallelLFSR.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="23" column="4" lean-forward="true" selection-start-line="23" selection-start-column="4" selection-end-line="49" selection-end-column="3" />
+          <folding>
+            <marker date="1574656245121" expanded="true" signature="679:1521" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/src/main/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="32" column="75" selection-start-line="32" selection-start-column="75" selection-end-line="32" selection-end-column="75" />
+        <state relative-caret-position="286">
+          <caret line="44" column="11" lean-forward="true" selection-start-line="44" selection-start-column="11" selection-end-line="44" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/polynomial/parallel_fibonacci_lfsr/FibonacciParallelLFSR.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="47" column="111" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="47" selection-end-column="111" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

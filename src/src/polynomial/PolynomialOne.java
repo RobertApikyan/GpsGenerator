@@ -15,6 +15,11 @@ public class PolynomialOne extends PolynomialProcessor {
 
     @Override
     public int processNext() {
-        return shift(exOr());
+        return shift(exOrFibonacci());
+    }
+
+    @Override
+    protected int processPrev() {
+        return 0;
     }
 }

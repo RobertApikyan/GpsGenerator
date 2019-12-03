@@ -6,9 +6,10 @@ public class Utils {
 
     // returns elapsed nano time
     public static long timeWatch(Runnable block){
-        long startTime = System.nanoTime();
+        ElapsedTimeCounter counter = new ElapsedTimeCounter();
+        counter.start();
         block.run();
-        return System.nanoTime() - startTime;
+        return counter.stop();
     }
 
 

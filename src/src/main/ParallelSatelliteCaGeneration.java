@@ -2,7 +2,7 @@ package src.main;
 
 import src.generators.CaGenerator;
 import src.generators.DataUtils;
-import src.polynomial.LFSR;
+import src.polynomial.FibonacciLfsr;
 import src.polynomial.PolynomialOne;
 import src.polynomial.PolynomialState;
 import src.polynomial.PolynomialTwo;
@@ -29,6 +29,7 @@ public class ParallelSatelliteCaGeneration {
 
     /**
      * This method will generate C/A codes in sequential manner, and write them in to .txt file
+     *
      * @param filePath, the final complete directory of file, example
      */
     private static void runSequential(String filePath) {
@@ -36,14 +37,14 @@ public class ParallelSatelliteCaGeneration {
         try {
             // Generate C/A codes
             int[][] codes = sequentialGeneration();
-             bos = new BufferedOutputStream(
+            bos = new BufferedOutputStream(
                     new FileOutputStream(filePath));
-             // write C/A codes on file
-            printSatelliteCaSequences(bos,"Parallel Generation",codes);
+            // write C/A codes on file
+            printSatelliteCaSequences(bos, "Parallel Generation", codes);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
-        }finally {
-            if (bos!=null){
+        } finally {
+            if (bos != null) {
                 try {
                     bos.flush();
                     bos.close();
@@ -56,6 +57,7 @@ public class ParallelSatelliteCaGeneration {
 
     /**
      * This method will generate C/A codes in parallel manner, and write them in to .txt file
+     *
      * @param filePath, the final complete directory of file, example
      */
     private static void runParallel(String filePath) {
@@ -66,11 +68,11 @@ public class ParallelSatelliteCaGeneration {
             bos = new BufferedOutputStream(
                     new FileOutputStream(filePath));
             // write C/A codes on file
-            printSatelliteCaSequences(bos,"Parallel Generation",codes);
+            printSatelliteCaSequences(bos, "Parallel Generation", codes);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
-        }finally {
-            if (bos!=null){
+        } finally {
+            if (bos != null) {
                 try {
                     bos.flush();
                     bos.close();
@@ -83,6 +85,7 @@ public class ParallelSatelliteCaGeneration {
 
     /**
      * Generates C/A codes using parallel generation method
+     *
      * @return The result is two dimensional array, where first dimension is the satellite number and second one
      * is appropriate C/A codes
      */
@@ -92,9 +95,9 @@ public class ParallelSatelliteCaGeneration {
         // initialize phase selectors for all satellites
         List<SatellitePhaseSelector> phaseSelectors = createSatelliteCollectors();
         // initialize first polynomial
-        LFSR p1 = new LFSR(new int[]{3, 10}, 10);
+        FibonacciLfsr p1 = new FibonacciLfsr(new int[]{3, 10}, 10);
         // initialize second polynomial
-        LFSR p2 = new LFSR(new int[]{2, 3, 6, 8, 9, 10}, 10);
+        FibonacciLfsr p2 = new FibonacciLfsr(new int[]{2, 3, 6, 8, 9, 10}, 10);
         // start the iteration for 1024 C/A code cycle
         for (int caIndex = 0; caIndex < COMPLETE_CA; caIndex++) {
             // generate output bit for first polynomial
@@ -108,7 +111,7 @@ public class ParallelSatelliteCaGeneration {
                 int p2OutPut = collector.apply(p2State);
                 // perform modulo addition between satellite output bit from second polynomial
                 // and first register output bit
-                values[collectorIndex][caIndex] = DataUtils.exOr(p1OutPut,p2OutPut);
+                values[collectorIndex][caIndex] = DataUtils.exOr(p1OutPut, p2OutPut);
             }
             // shift the second polynomial
             p2.process();
@@ -119,10 +122,11 @@ public class ParallelSatelliteCaGeneration {
 
     /**
      * Generates C/A codes using sequential generation method
+     *
      * @return The result is two dimensional array, where first dimension is the satellite number and second one
      * is appropriate C/A codes
      */
-    private static int[][] sequentialGeneration(){
+    private static int[][] sequentialGeneration() {
         // initialize two dimensional empty array for results
         int[][] values = new int[SAT_COUNT][COMPLETE_CA];
         // initialize phase selectors for all satellites
@@ -130,7 +134,7 @@ public class ParallelSatelliteCaGeneration {
 
         for (int satelliteIndex = 0; satelliteIndex < SAT_COUNT; satelliteIndex++) {
             // initialize C/A code generator for iteration satellite
-            CaGenerator generator = new CaGenerator(new PolynomialOne(),new PolynomialTwo(goldNumbers.get(satelliteIndex)));
+            CaGenerator generator = new CaGenerator(new PolynomialOne(), new PolynomialTwo(goldNumbers.get(satelliteIndex)));
             // Generate all C/A codes for iteration satellite
             for (int caIndex = 0; caIndex < COMPLETE_CA; caIndex++) {
                 int chip = generator.generate();

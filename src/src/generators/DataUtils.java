@@ -56,6 +56,7 @@ public class DataUtils {
     }
 
     public static byte exOr(int[] stateValues,int[] exOrIndexes) {
+
         byte sum = 0;
 
         for (int exOrIndex : exOrIndexes) {
@@ -63,6 +64,24 @@ public class DataUtils {
         }
 
         return (byte) (sum % 2 == 0 ? 0 : 1);
+    }
+
+    public static byte exOrParallel(int[] stateValues,int[] exOrIndexes){
+        byte output = (byte) stateValues[stateValues.length -1];
+
+        for (int i = exOrIndexes.length - 1; i >= 0; i--) {
+            final int exOrIndex = exOrIndexes[i] -1;
+            stateValues[exOrIndex-1] = exOr(stateValues[exOrIndex-1], output);
+        }
+
+        return output;
+    }
+
+    public static int[] reverse(int[] values){
+        for (int i = 0; i < values.length; i++) {
+            values[i] = reverseBite(values[i]);
+        }
+        return  values;
     }
 
     public static int and(int first, int second) {
